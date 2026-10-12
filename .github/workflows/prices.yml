@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "15 2 * * 1-6"   # 7:45 am IST, Monday to Saturday
     - cron: "15 11 * * 1-5"  # 4:45 pm IST, weekdays
+    - cron: "0,30 3-13 * * 1-6"   # every 30 min, 8:30 am - 7 pm IST
   workflow_dispatch: {}
 permissions:
   contents: write
