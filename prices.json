@@ -1,0 +1,11 @@
+{
+  "usd_inr": 96.964336,
+  "usd_inr_as_of": "12 Oct 2026 07:56 IST",
+  "updated": "12 Oct 2026 07:56 IST",
+  "missing": [
+    "cobalt_lme",
+    "nickel_lme",
+    "cobalt_intl"
+  ],
+  "sources": "dailymetalprice.com (LME cobalt, nickel), lme.com (LME Cobalt Fastmarkets MB month 2), open.er-api.com (USD/INR)"
+}
