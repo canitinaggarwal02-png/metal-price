@@ -1,8 +1,8 @@
 """Fetch daily metal prices and save them to prices.json (read by the Price & Hedge Connector page).
 Each price is tried from several free sources; the first one that gives a sensible number is used."""
-import json, re, urllib.request, urllib.error, datetime, os
+import json, re, urllib.request, urllib.error, urllib.parse, datetime, os
 
-UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+UA = {"Referer": "https://www.cmegroup.com/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
       "Accept-Language": "en-US,en;q=0.9"}
 NUM = r"([0-9]{1,3}(?:,[0-9]{3})+(?:\.[0-9]+)?|[0-9]{4,6}(?:\.[0-9]+)?)"
@@ -72,31 +72,38 @@ def westmetall_ni():
     return val(m.group(1)) if m and 8000 <= val(m.group(1)) <= 60000 else None
 
 
+def relays(url):
+    # the site itself first, then two free reader services in case the site refuses GitHub's servers
+    yield get(url)
+    yield get("https://r.jina.ai/" + url)
+    yield get("https://api.allorigins.win/raw?url=" + urllib.parse.quote(url, safe=""))
+
+
 def cme_cobalt():
     # CME Cobalt Metal (Fastmarkets) futures settlement, USD/lb -> USD/t; uses the 2nd listed month (like LME "Month 2")
     day = datetime.datetime.now(datetime.timezone.utc).date()
-    for back in range(1, 8):
+    for back in range(1, 6):
         d = day - datetime.timedelta(days=back)
         if d.weekday() >= 5:
             continue
         url = ("https://www.cmegroup.com/CmeWS/mvc/Settlements/Futures/Settlements/8971/FUT"
                f"?tradeDate={d:%m/%d/%Y}&strategy=DEFAULT&pageSize=50")
-        try:
-            rows = json.loads(get(url) or "{}").get("settlements", [])
-        except Exception:
-            rows = []
-        good = []
-        for r in rows:
-            try:
-                good.append((r.get("month"), float(str(r.get("settle")).replace(",", ""))))
-            except ValueError:
-                pass
-        if len(good) >= 2:
-            month, lb = good[1]
-            t = round(lb * 2204.62, 2)
-            print(f"  CME {d} {month} settle {lb} $/lb = {t} $/t")
-            if 20000 <= t <= 150000:
-                return t, f"CME Cobalt (Fastmarkets) {month} settle {lb} USD/lb on {d:%d %b %Y}"
+        for body in relays(url):
+            rows = re.findall(r'"month"\s*:\s*"([A-Z]{3} \d{2})"[^}]*?"settle"\s*:\s*"([0-9.,]+)"', body or "")
+            if len(rows) >= 2:
+                month, lb = rows[1][0], val(rows[1][1])
+                t = round(lb * 2204.62, 2)
+                print(f"  CME {d} {month} settle {lb} $/lb = {t} $/t")
+                if 20000 <= t <= 150000:
+                    return t
+    return None
+
+
+def lme_cobalt():
+    for body in relays("https://www.lme.com/en/metals/ev/lme-cobalt-fastmarkets-mb"):
+        v = near(body or "", ["Month 2 Closing Price", "Closing Price"], 20000, 150000)
+        if v:
+            return v
     return None
 
 
@@ -132,8 +139,8 @@ new = {
                         lambda: first_dollar(get("https://www.dailymetalprice.com/metalprices.php?c=ni&u=mt&d=0"), 8000, 60000),
                         lambda: te("nickel", 8000, 60000)),
     "cobalt_intl": first("Cobalt (international, Fastmarkets)",
-                         lambda: (cme_cobalt() or (None,))[0],
-                         lambda: near(get("https://www.lme.com/en/metals/ev/lme-cobalt-fastmarkets-mb"), ["Month 2 Closing Price", "Closing Price"], 20000, 150000)),
+                         cme_cobalt,
+                         lme_cobalt),
     "usd_inr": first("USD/INR", fx),
 }
 old = json.load(open("prices.json")) if os.path.exists("prices.json") else {}
