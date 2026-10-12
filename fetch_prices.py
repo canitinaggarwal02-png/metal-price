@@ -72,6 +72,34 @@ def westmetall_ni():
     return val(m.group(1)) if m and 8000 <= val(m.group(1)) <= 60000 else None
 
 
+def cme_cobalt():
+    # CME Cobalt Metal (Fastmarkets) futures settlement, USD/lb -> USD/t; uses the 2nd listed month (like LME "Month 2")
+    day = datetime.datetime.now(datetime.timezone.utc).date()
+    for back in range(1, 8):
+        d = day - datetime.timedelta(days=back)
+        if d.weekday() >= 5:
+            continue
+        url = ("https://www.cmegroup.com/CmeWS/mvc/Settlements/Futures/Settlements/8971/FUT"
+               f"?tradeDate={d:%m/%d/%Y}&strategy=DEFAULT&pageSize=50")
+        try:
+            rows = json.loads(get(url) or "{}").get("settlements", [])
+        except Exception:
+            rows = []
+        good = []
+        for r in rows:
+            try:
+                good.append((r.get("month"), float(str(r.get("settle")).replace(",", ""))))
+            except ValueError:
+                pass
+        if len(good) >= 2:
+            month, lb = good[1]
+            t = round(lb * 2204.62, 2)
+            print(f"  CME {d} {month} settle {lb} $/lb = {t} $/t")
+            if 20000 <= t <= 150000:
+                return t, f"CME Cobalt (Fastmarkets) {month} settle {lb} USD/lb on {d:%d %b %Y}"
+    return None
+
+
 def fx():
     try:
         v = json.loads(get("https://open.er-api.com/v6/latest/USD"))["rates"]["INR"]
@@ -103,7 +131,8 @@ new = {
                         westmetall_ni,
                         lambda: first_dollar(get("https://www.dailymetalprice.com/metalprices.php?c=ni&u=mt&d=0"), 8000, 60000),
                         lambda: te("nickel", 8000, 60000)),
-    "cobalt_intl": first("Cobalt (LME Fastmarkets, international)",
+    "cobalt_intl": first("Cobalt (international, Fastmarkets)",
+                         lambda: (cme_cobalt() or (None,))[0],
                          lambda: near(get("https://www.lme.com/en/metals/ev/lme-cobalt-fastmarkets-mb"), ["Month 2 Closing Price", "Closing Price"], 20000, 150000)),
     "usd_inr": first("USD/INR", fx),
 }
@@ -119,6 +148,6 @@ for k, v in new.items():
         missing.append(k)
 out["updated"] = now.strftime("%d %b %Y %H:%M IST")
 out["missing"] = missing
-out["sources"] = "dailymetalprice.com / tradingeconomics.com (LME cobalt), westmetall.com (LME nickel cash), lme.com (LME Cobalt Fastmarkets MB), open.er-api.com (USD/INR)"
+out["sources"] = "dailymetalprice.com / tradingeconomics.com (LME cobalt), westmetall.com (LME nickel cash), cmegroup.com Cobalt Metal (Fastmarkets) futures 2nd month / lme.com (international cobalt), open.er-api.com (USD/INR)"
 json.dump(out, open("prices.json", "w"), indent=2)
 print(json.dumps(out, indent=2))
