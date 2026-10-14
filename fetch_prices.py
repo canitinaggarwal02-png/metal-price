@@ -100,9 +100,18 @@ def cme_cobalt():
 
 
 def lme_cobalt():
-    for body in relays("https://www.lme.com/en/metals/ev/lme-cobalt-fastmarkets-mb"):
-        v = near(body or "", ["Month 2 Closing Price", "Closing Price"], 20000, 150000)
+    # LME Cobalt (Fastmarkets MB) "Month 2 Closing Price" from lme.com, USD/t
+    url = "https://www.lme.com/en/metals/ev/lme-cobalt-fastmarkets-mb"
+    for body in relays(url):
+        if not body:
+            continue
+        v = near(body, ["Month 2 Closing Price", "Closing Price"], 20000, 150000)
+        if not v:
+            # price sometimes sits in page data rather than visible text
+            m = re.search(r'(?i)closing\s*price[^0-9]{0,300}?([0-9]{5,6}(?:\.[0-9]+)?)(?![0-9])', body)
+            v = val(m.group(1)) if m and 20000 <= val(m.group(1)) <= 150000 else None
         if v:
+            print(f"  LME Month 2 closing {v} $/t")
             return v
     return None
 
@@ -115,6 +124,9 @@ def fx():
         return None
 
 
+USED = {}
+
+
 def first(name, *tries):
     print(name)
     for f in tries:
@@ -125,6 +137,7 @@ def first(name, *tries):
             v = None
         if v:
             print(f"  -> {v}")
+            USED[name] = getattr(f, "__name__", "")
             return v
     print("  -> not found")
     return None
@@ -138,9 +151,9 @@ new = {
                         westmetall_ni,
                         lambda: first_dollar(get("https://www.dailymetalprice.com/metalprices.php?c=ni&u=mt&d=0"), 8000, 60000),
                         lambda: te("nickel", 8000, 60000)),
-    "cobalt_intl": first("Cobalt (international, Fastmarkets)",
-                         cme_cobalt,
-                         lme_cobalt),
+    "cobalt_intl": first("Cobalt (international, LME Fastmarkets)",
+                         lme_cobalt,
+                         cme_cobalt),
     "usd_inr": first("USD/INR", fx),
 }
 old = json.load(open("prices.json")) if os.path.exists("prices.json") else {}
@@ -153,8 +166,12 @@ for k, v in new.items():
         out[k + "_as_of"] = now.strftime("%d %b %Y %H:%M IST")
     else:
         missing.append(k)
+if new["cobalt_intl"]:
+    out["cobalt_intl_source"] = ("LME Cobalt Fastmarkets MB, Month 2 closing (lme.com)"
+                                 if USED.get("Cobalt (international, LME Fastmarkets)") == "lme_cobalt"
+                                 else "CME Cobalt Metal (Fastmarkets) futures, 2nd month (backup)")
 out["updated"] = now.strftime("%d %b %Y %H:%M IST")
 out["missing"] = missing
-out["sources"] = "dailymetalprice.com / tradingeconomics.com (LME cobalt), westmetall.com (LME nickel cash), cmegroup.com Cobalt Metal (Fastmarkets) futures 2nd month / lme.com (international cobalt), open.er-api.com (USD/INR)"
+out["sources"] = "dailymetalprice.com / tradingeconomics.com (LME cobalt), westmetall.com (LME nickel cash), lme.com LME Cobalt Fastmarkets MB Month 2 closing, backup cmegroup.com Cobalt Metal (Fastmarkets) 2nd month (international cobalt), open.er-api.com (USD/INR)"
 json.dump(out, open("prices.json", "w"), indent=2)
 print(json.dumps(out, indent=2))
