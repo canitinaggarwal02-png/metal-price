@@ -91,8 +91,11 @@ def cme_settle(d):
             print(f"  CME {d} {month} settle {lb} $/lb = {t} $/t")
             return t if 20000 <= t <= 150000 else None
         if body and '"settlements"' in body:
-            return None  # answered, but no trading that day
+            return 0  # answered, but no trading that day
     return None
+
+
+CME_DAY = {}
 
 
 def cme_cobalt():
@@ -103,6 +106,7 @@ def cme_cobalt():
             continue
         t = cme_settle(d)
         if t:
+            CME_DAY["date"] = d.strftime("%Y-%m-%d")
             return t
     return None
 
@@ -159,9 +163,8 @@ new = {
                         westmetall_ni,
                         lambda: first_dollar(get("https://www.dailymetalprice.com/metalprices.php?c=ni&u=mt&d=0"), 8000, 60000),
                         lambda: te("nickel", 8000, 60000)),
-    "cobalt_intl": first("Cobalt (international, LME Fastmarkets)",
-                         lme_cobalt,
-                         cme_cobalt),
+    "cobalt_lme_fm": first("Cobalt LME Fastmarkets MB month 2", lme_cobalt),
+    "cobalt_cme": first("Cobalt CME futures 2nd month", cme_cobalt),
     "usd_inr": first("USD/INR", fx),
 }
 # live prices go to live.json (read only by the new access-code page); prices.json is kept as a warning for old copies
@@ -178,10 +181,15 @@ for k, v in new.items():
         out[k + "_as_of"] = now.strftime("%d %b %Y %H:%M IST")
     else:
         missing.append(k)
-if new["cobalt_intl"]:
-    out["cobalt_intl_source"] = ("LME Cobalt Fastmarkets MB, Month 2 closing (lme.com)"
-                                 if USED.get("Cobalt (international, LME Fastmarkets)") == "lme_cobalt"
-                                 else "CME Cobalt Metal (Fastmarkets) futures, 2nd month (backup)")
+# international cobalt shown on the price page: LME first, CME as backup
+if new["cobalt_lme_fm"]:
+    out["cobalt_intl"], out["cobalt_intl_as_of"] = new["cobalt_lme_fm"], out["cobalt_lme_fm_as_of"]
+    out["cobalt_intl_source"] = "LME Cobalt Fastmarkets MB, Month 2 closing (lme.com)"
+elif new["cobalt_cme"]:
+    out["cobalt_intl"], out["cobalt_intl_as_of"] = new["cobalt_cme"], out["cobalt_cme_as_of"]
+    out["cobalt_intl_source"] = "CME Cobalt Metal (Fastmarkets) futures, 2nd month (backup)"
+else:
+    missing.append("cobalt_intl")
 out["updated"] = now.strftime("%d %b %Y %H:%M IST")
 out["missing"] = missing
 out["sources"] = "dailymetalprice.com / tradingeconomics.com (LME cobalt), westmetall.com (LME nickel cash), lme.com LME Cobalt Fastmarkets MB Month 2 closing, backup cmegroup.com Cobalt Metal (Fastmarkets) 2nd month (international cobalt), open.er-api.com (USD/INR)"
@@ -191,19 +199,43 @@ json.dump(out, open("live.json", "w"), indent=2)
 # ---- price history for the Price trend tab: history.json = {series: {"YYYY-MM-DD": USD/t}}
 def update_history():
     H = json.load(open("history.json")) if os.path.exists("history.json") else {}
-    for k in ("cobalt_lme", "cobalt_intl", "nickel_lme"):
+    for k in ("cobalt_lme", "cobalt_lme_fm", "cobalt_cme", "nickel_lme"):
         H.setdefault(k, {})
+    # earlier versions kept the LME Fastmarkets price under cobalt_intl (from 17 Oct 2026)
+    for d, v in H.pop("cobalt_intl", {}).items():
+        if d >= "2026-10-17":
+            H["cobalt_lme_fm"].setdefault(d, v)
     today = now.strftime("%Y-%m-%d")
     # LME physical cobalt: the dated rows on dailymetalprice.com (about a week each run)
+    log = {}
     t = text_of(get("https://www.dailymetalprice.com/metalprices.php?c=co&u=mt&d=0"))
-    for m in re.finditer(r"\$\s*([0-9,]+\.\d+)\s*\|?\s*([A-Z][a-z]{2} \d{1,2}, 20\d\d)", t):
-        try:
-            d = datetime.datetime.strptime(m.group(2), "%b %d, %Y").strftime("%Y-%m-%d")
-        except ValueError:
-            continue
-        if 15000 <= val(m.group(1)) <= 150000:
-            H["cobalt_lme"][d] = val(m.group(1))
+    i = t.find("$")
+    log["dmp_sample"] = t[max(0, i - 120):i + 300]
+    pats = [(r"[A-Z][a-z]{2,8}\.? \d{1,2}, 20\d\d", ("%b %d, %Y", "%B %d, %Y", "%b. %d, %Y")),
+            (r"\d{1,2}/\d{1,2}/20\d\d", ("%m/%d/%Y",)),
+            (r"20\d\d-\d\d-\d\d", ("%Y-%m-%d",))]
+    found = 0; dmp = []
+    for pat, fmts in pats:
+        for m in re.finditer(pat, t):
+            d = None
+            for f in fmts:
+                try:
+                    d = datetime.datetime.strptime(m.group(0), f).strftime("%Y-%m-%d"); break
+                except ValueError:
+                    pass
+            if not d:
+                continue
+            before = [val(n.group(1)) for n in re.finditer(NUM, t[max(0, m.start() - 40):m.start()]) if 15000 <= val(n.group(1)) <= 150000]
+            after = [val(n.group(1)) for n in re.finditer(NUM, t[m.end():m.end() + 40]) if 15000 <= val(n.group(1)) <= 150000]
+            best = before[-1] if before else (after[0] if after else None)
+            if best:
+                H["cobalt_lme"][d] = best; found += 1; dmp.append(d)
+    log["dmp_rows"] = found
+    if dmp:  # drop any cobalt point dated after the site's latest price
+        for d in [d for d in H["cobalt_lme"] if d > max(dmp)]:
+            H["cobalt_lme"].pop(d)
     # LME nickel cash: whole current-year table on westmetall.com, plus last year once
+    wm = []
     years = [now.year] + ([now.year - 1] if len(H["nickel_lme"]) < 200 else [])
     for y in years:
         url = "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Ni_cash" + ("" if y == now.year else f"&year={y}")
@@ -213,28 +245,42 @@ def update_history():
             except ValueError:
                 continue
             if 8000 <= val(m.group(2)) <= 60000:
-                H["nickel_lme"][d] = val(m.group(2))
-    # today's values
-    for k in ("cobalt_lme", "nickel_lme", "cobalt_intl"):
-        if new.get(k) and (k == "cobalt_intl" or today not in H[k]):
-            H[k][today] = new[k]
-    # international cobalt before this job existed: weekly CME settlements for the past year, a few per run
-    have = set(H["cobalt_intl"])
-    todo = []
-    for w in range(1, 53):
-        d = (now - datetime.timedelta(weeks=w)).date()
-        while d.weekday() >= 5:
-            d -= datetime.timedelta(days=1)
-        if not any(abs((datetime.date.fromisoformat(x) - d).days) <= 3 for x in have):
-            todo.append(d)
-    for d in todo[:8]:
-        v = cme_settle(d)
-        if v:
-            H["cobalt_intl"][d.isoformat()] = v
-    for k in H:
+                H["nickel_lme"][d] = val(m.group(2)); wm.append(d)
+    if wm:  # drop any nickel point dated after westmetall's latest price
+        for d in [d for d in H["nickel_lme"] if d > max(wm)]:
+            H["nickel_lme"].pop(d)
+    log["nickel_rows"] = len(wm)
+    # LME Fastmarkets cobalt: LME does not publish past prices for free, so only prices recorded by this job
+    if new.get("cobalt_lme_fm"):
+        H["cobalt_lme_fm"][today] = new["cobalt_lme_fm"]
+    # CME cobalt futures: today's settlement, plus past settlements filled in up to 25 days per run (back about 6 months)
+    if new.get("cobalt_cme") and CME_DAY.get("date"):
+        H["cobalt_cme"][CME_DAY["date"]] = new["cobalt_cme"]
+    nodata = set(H.get("cme_no_trading", []))
+    start = now.date() - datetime.timedelta(days=200)
+    todo = [start + datetime.timedelta(days=i) for i in range((now.date() - start).days)]
+    todo = [d for d in reversed(todo) if d.weekday() < 5 and d.strftime("%Y-%m-%d") not in H["cobalt_cme"]
+            and d.strftime("%Y-%m-%d") not in nodata and d < now.date() - datetime.timedelta(days=1)]
+    got = fails = 0
+    for d in todo[:25]:
+        t = cme_settle(d)
+        if t:
+            H["cobalt_cme"][d.strftime("%Y-%m-%d")] = t; got += 1; fails = 0
+        elif t == 0:
+            nodata.add(d.strftime("%Y-%m-%d"))  # holiday, no settlement
+        else:
+            fails += 1
+            if fails >= 4:
+                break  # CME not answering this run; try again next run
+    H["cme_no_trading"] = sorted(nodata)
+    log["cme_backfill_added"] = got
+    if new.get("cobalt_lme") and not log["dmp_rows"]:
+        H["cobalt_lme"][today] = new["cobalt_lme"]
+    H["log"] = log
+    for k in ("cobalt_lme", "cobalt_lme_fm", "cobalt_cme", "nickel_lme"):
         H[k] = dict(sorted(H[k].items()))
     H["updated"] = now.strftime("%d %b %Y %H:%M IST")
-    H["note"] = "USD/tonne by date. cobalt_intl = LME Cobalt Fastmarkets MB month 2 (earlier weeks from CME Cobalt Metal futures 2nd month); cobalt_lme = LME physical (dailymetalprice.com); nickel_lme = LME nickel cash (westmetall.com)."
+    H["note"] = "USD/tonne by date, recorded by this job. cobalt_lme_fm = LME Cobalt Fastmarkets MB month 2 (from 17 Oct 2026); cobalt_cme = CME Cobalt Metal (Fastmarkets) futures 2nd month settlement; cobalt_lme = LME physical (dailymetalprice.com); nickel_lme = LME nickel cash (westmetall.com)."
     json.dump(H, open("history.json", "w"), indent=1)
     print("history points:", {k: len(v) for k, v in H.items() if isinstance(v, dict)})
 
@@ -243,6 +289,83 @@ try:
     update_history()
 except Exception as e:
     print("history update failed:", e)
+
+# ---- news headlines for the Price trend tab: news.json, each headline scored up (+1) / down (-1) for the price
+UP = ["export ban", "ban on export", "export quota", "quota", "supply cut", "output cut", "production cut", "cut output",
+      "cuts output", "halt", "suspend", "shortage", "deficit", "strike", "disruption", "stockpil", "rally", "surge",
+      "soar", "jump", "rise", "rises", "rising", "higher", "climb", "gain", "record high", "tight", "strong demand",
+      "demand boost", "rebound", "extends ban", "tariff"]
+DOWN = ["surplus", "oversupply", "glut", "slump", "plunge", "fall", "falls", "falling", "drop", "decline", "lower",
+        "weak demand", "slowdown", "lifts ban", "lift ban", "ends ban", "eases", "resume", "restart", "ramp up",
+        "expansion", "new capacity", "inventories rise", "stocks rise", "sell-off", "selloff", "slide", "tumble",
+        "lowest", "pressure"]
+QUERIES = {"cobalt": ["cobalt price", "cobalt Congo export", "cobalt market"],
+           "nickel": ["nickel price", "LME nickel", "nickel Indonesia"]}
+
+
+def score(title):
+    t = " " + title.lower() + " "
+    up = [w for w in UP if re.search(r"\b" + re.escape(w), t)]
+    down = [w for w in DOWN if re.search(r"\b" + re.escape(w), t)]
+    if "stocks rise" in down or "inventories rise" in down:
+        up = [w for w in up if w not in ("rise", "rises", "rising")]
+    sc = (len(up) > 0) - (len(down) > 0)
+    return sc, ", ".join(up if sc > 0 else down if sc < 0 else up + down)
+
+
+def rss_items(q):
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+    enc = urllib.parse.quote(q)
+    for url in (f"https://news.google.com/rss/search?q={enc}+when:30d&hl=en-IN&gl=IN&ceid=IN:en",
+                f"https://www.bing.com/news/search?q={enc}&format=rss"):
+        body = get(url)
+        try:
+            root = ET.fromstring(body)
+        except Exception:
+            continue
+        out = []
+        for it in root.iter("item"):
+            title = (it.findtext("title") or "").strip()
+            src = it.find("source")
+            source = (src.text if src is not None and src.text else "").strip()
+            if source and title.endswith(" - " + source):
+                title = title[: -len(source) - 3]
+            try:
+                d = parsedate_to_datetime(it.findtext("pubDate") or "").astimezone(datetime.timezone.utc)
+            except Exception:
+                continue
+            out.append({"date": d.strftime("%Y-%m-%d"), "title": title, "source": source, "link": (it.findtext("link") or "").strip()})
+        if out:
+            return out
+    return []
+
+
+def update_news():
+    N = json.load(open("news.json")) if os.path.exists("news.json") else {}
+    cutoff = (now - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
+    for metal, qs in QUERIES.items():
+        seen = {x["title"].lower(): x for x in N.get(metal, [])}
+        for q in qs:
+            for x in rss_items(q):
+                if metal not in x["title"].lower():
+                    continue
+                x["score"], x["why"] = score(x["title"])
+                seen.setdefault(x["title"].lower(), x)
+        items = [x for x in seen.values() if x["date"] >= cutoff]
+        items.sort(key=lambda x: x["date"], reverse=True)
+        N[metal] = items[:60]
+    N["updated"] = now.strftime("%d %b %Y %H:%M IST")
+    N["note"] = "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
+    json.dump(N, open("news.json", "w"), indent=1)
+    print("news:", {m: len(N[m]) for m in QUERIES})
+
+
+try:
+    update_news()
+except Exception as e:
+    print("news update failed:", e)
+
 WARN = "ACCESS EXPIRED: this is an old copy of the price page. Ask the owner for the new file and your access code"
 json.dump({"updated": WARN, "notice": WARN, "missing": ["cobalt_lme", "nickel_lme", "cobalt_intl", "usd_inr"]},
           open("prices.json", "w"), indent=2)
