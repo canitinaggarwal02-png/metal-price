@@ -1,4 +1,4 @@
-"""Fetch daily metal prices and save them to prices.json (read by the Price & Hedge Connector page).
+"""Fetch daily metal prices and save them to live.json (read by the Price & Hedge Connector page).
 Each price is tried from several free sources; the first one that gives a sensible number is used."""
 import json, re, urllib.request, urllib.error, urllib.parse, datetime, os
 
@@ -79,23 +79,31 @@ def relays(url):
     yield get("https://api.allorigins.win/raw?url=" + urllib.parse.quote(url, safe=""))
 
 
+def cme_settle(d):
+    # CME Cobalt Metal (Fastmarkets) futures settlement on trade date d, 2nd listed month, USD/lb -> USD/t
+    url = ("https://www.cmegroup.com/CmeWS/mvc/Settlements/Futures/Settlements/8971/FUT"
+           f"?tradeDate={d:%m/%d/%Y}&strategy=DEFAULT&pageSize=50")
+    for body in relays(url):
+        rows = re.findall(r'"month"\s*:\s*"([A-Z]{3} \d{2})"[^}]*?"settle"\s*:\s*"([0-9.,]+)"', body or "")
+        if len(rows) >= 2:
+            month, lb = rows[1][0], val(rows[1][1])
+            t = round(lb * 2204.62, 2)
+            print(f"  CME {d} {month} settle {lb} $/lb = {t} $/t")
+            return t if 20000 <= t <= 150000 else None
+        if body and '"settlements"' in body:
+            return None  # answered, but no trading that day
+    return None
+
+
 def cme_cobalt():
-    # CME Cobalt Metal (Fastmarkets) futures settlement, USD/lb -> USD/t; uses the 2nd listed month (like LME "Month 2")
     day = datetime.datetime.now(datetime.timezone.utc).date()
     for back in range(1, 6):
         d = day - datetime.timedelta(days=back)
         if d.weekday() >= 5:
             continue
-        url = ("https://www.cmegroup.com/CmeWS/mvc/Settlements/Futures/Settlements/8971/FUT"
-               f"?tradeDate={d:%m/%d/%Y}&strategy=DEFAULT&pageSize=50")
-        for body in relays(url):
-            rows = re.findall(r'"month"\s*:\s*"([A-Z]{3} \d{2})"[^}]*?"settle"\s*:\s*"([0-9.,]+)"', body or "")
-            if len(rows) >= 2:
-                month, lb = rows[1][0], val(rows[1][1])
-                t = round(lb * 2204.62, 2)
-                print(f"  CME {d} {month} settle {lb} $/lb = {t} $/t")
-                if 20000 <= t <= 150000:
-                    return t
+        t = cme_settle(d)
+        if t:
+            return t
     return None
 
 
@@ -156,7 +164,11 @@ new = {
                          cme_cobalt),
     "usd_inr": first("USD/INR", fx),
 }
-old = json.load(open("prices.json")) if os.path.exists("prices.json") else {}
+# live prices go to live.json (read only by the new access-code page); prices.json is kept as a warning for old copies
+src = "live.json" if os.path.exists("live.json") else "prices.json"
+old = json.load(open(src)) if os.path.exists(src) else {}
+for k in ("notice",):
+    old.pop(k, None)
 now = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=5, minutes=30)
 out = dict(old)
 missing = []
@@ -173,5 +185,65 @@ if new["cobalt_intl"]:
 out["updated"] = now.strftime("%d %b %Y %H:%M IST")
 out["missing"] = missing
 out["sources"] = "dailymetalprice.com / tradingeconomics.com (LME cobalt), westmetall.com (LME nickel cash), lme.com LME Cobalt Fastmarkets MB Month 2 closing, backup cmegroup.com Cobalt Metal (Fastmarkets) 2nd month (international cobalt), open.er-api.com (USD/INR)"
-json.dump(out, open("prices.json", "w"), indent=2)
+json.dump(out, open("live.json", "w"), indent=2)
+
+
+# ---- price history for the Price trend tab: history.json = {series: {"YYYY-MM-DD": USD/t}}
+def update_history():
+    H = json.load(open("history.json")) if os.path.exists("history.json") else {}
+    for k in ("cobalt_lme", "cobalt_intl", "nickel_lme"):
+        H.setdefault(k, {})
+    today = now.strftime("%Y-%m-%d")
+    # LME physical cobalt: the dated rows on dailymetalprice.com (about a week each run)
+    t = text_of(get("https://www.dailymetalprice.com/metalprices.php?c=co&u=mt&d=0"))
+    for m in re.finditer(r"\$\s*([0-9,]+\.\d+)\s*\|?\s*([A-Z][a-z]{2} \d{1,2}, 20\d\d)", t):
+        try:
+            d = datetime.datetime.strptime(m.group(2), "%b %d, %Y").strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+        if 15000 <= val(m.group(1)) <= 150000:
+            H["cobalt_lme"][d] = val(m.group(1))
+    # LME nickel cash: whole current-year table on westmetall.com, plus last year once
+    years = [now.year] + ([now.year - 1] if len(H["nickel_lme"]) < 200 else [])
+    for y in years:
+        url = "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Ni_cash" + ("" if y == now.year else f"&year={y}")
+        for m in re.finditer(r"(\d{1,2}\. [A-Z][a-z]+ 20\d\d)\s+" + NUM, text_of(get(url))):
+            try:
+                d = datetime.datetime.strptime(m.group(1), "%d. %B %Y").strftime("%Y-%m-%d")
+            except ValueError:
+                continue
+            if 8000 <= val(m.group(2)) <= 60000:
+                H["nickel_lme"][d] = val(m.group(2))
+    # today's values
+    for k in ("cobalt_lme", "nickel_lme", "cobalt_intl"):
+        if new.get(k) and (k == "cobalt_intl" or today not in H[k]):
+            H[k][today] = new[k]
+    # international cobalt before this job existed: weekly CME settlements for the past year, a few per run
+    have = set(H["cobalt_intl"])
+    todo = []
+    for w in range(1, 53):
+        d = (now - datetime.timedelta(weeks=w)).date()
+        while d.weekday() >= 5:
+            d -= datetime.timedelta(days=1)
+        if not any(abs((datetime.date.fromisoformat(x) - d).days) <= 3 for x in have):
+            todo.append(d)
+    for d in todo[:8]:
+        v = cme_settle(d)
+        if v:
+            H["cobalt_intl"][d.isoformat()] = v
+    for k in H:
+        H[k] = dict(sorted(H[k].items()))
+    H["updated"] = now.strftime("%d %b %Y %H:%M IST")
+    H["note"] = "USD/tonne by date. cobalt_intl = LME Cobalt Fastmarkets MB month 2 (earlier weeks from CME Cobalt Metal futures 2nd month); cobalt_lme = LME physical (dailymetalprice.com); nickel_lme = LME nickel cash (westmetall.com)."
+    json.dump(H, open("history.json", "w"), indent=1)
+    print("history points:", {k: len(v) for k, v in H.items() if isinstance(v, dict)})
+
+
+try:
+    update_history()
+except Exception as e:
+    print("history update failed:", e)
+WARN = "ACCESS EXPIRED: this is an old copy of the price page. Ask the owner for the new file and your access code"
+json.dump({"updated": WARN, "notice": WARN, "missing": ["cobalt_lme", "nickel_lme", "cobalt_intl", "usd_inr"]},
+          open("prices.json", "w"), indent=2)
 print(json.dumps(out, indent=2))
