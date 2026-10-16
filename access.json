@@ -1,0 +1,61 @@
+{
+  "enabled": true,
+  "note": "Pause someone: set their active to false. Restart: set it back to true. Remove someone for good: delete their line. Pause everyone: set enabled to false.",
+  "users": [
+    {
+      "name": "Nitin (owner)",
+      "active": true,
+      "code_hash": "5441969f3dca213fd0d8b2363a34144c88644ebd063dabbe2dd6b518b368c24f"
+    },
+    {
+      "name": "Partner 1",
+      "active": true,
+      "code_hash": "a163e8cc3dd146f4ed725c980e483557bdaa9fae05352e834c583346bf02b042"
+    },
+    {
+      "name": "Partner 2",
+      "active": true,
+      "code_hash": "c1e6c3339e4ba4c4e41813059187a38da8f948edd4bf9abb1c9678a556c8ab0e"
+    },
+    {
+      "name": "Partner 3",
+      "active": true,
+      "code_hash": "35f6ac540be43b3e7aedd1198453b5085551792e4ec370d74150046897f2869b"
+    },
+    {
+      "name": "Partner 4",
+      "active": true,
+      "code_hash": "61a328fa4c51cb49f5c4474507a3844e31741c0f180561f46b71deb00b7e49a7"
+    },
+    {
+      "name": "Partner 5",
+      "active": true,
+      "code_hash": "fcaa5f664cf3de1ba9b8edfa1442d483521bd7c7d31ef1e199337c007aa6c1e0"
+    },
+    {
+      "name": "Partner 6",
+      "active": true,
+      "code_hash": "0d50e4c76f7a2d974cdfd0ac4949382403553f6275763ff4a3980f2e3e0f3a0f"
+    },
+    {
+      "name": "Partner 7",
+      "active": true,
+      "code_hash": "58f20390b7eef5bdd81090e0fffbc1549c233a98ccc33d1c4ed288f728d27ace"
+    },
+    {
+      "name": "Partner 8",
+      "active": true,
+      "code_hash": "29c8e6cf868f7b39a6a9b1b10ca3b8b54203cd15a36bf9f7f7fb225f6a54b960"
+    },
+    {
+      "name": "Partner 9",
+      "active": true,
+      "code_hash": "862d1089eded6cf836b6a5e4495b6328bdec02c54fb4ef630d3caefb00011510"
+    },
+    {
+      "name": "Partner 10",
+      "active": true,
+      "code_hash": "55d093d3f0b6c98f40759bc06555c9bea7c12fd9736cea0bc720fec7697d8d0f"
+    }
+  ]
+}
