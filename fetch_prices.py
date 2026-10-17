@@ -270,7 +270,7 @@ def update_history():
             nodata.add(d.strftime("%Y-%m-%d"))  # holiday, no settlement
         else:
             fails += 1
-            if fails >= 4:
+            if fails >= 1:
                 break  # CME not answering this run; try again next run
     H["cme_no_trading"] = sorted(nodata)
     log["cme_backfill_added"] = got
@@ -294,11 +294,11 @@ except Exception as e:
 UP = ["export ban", "ban on export", "export quota", "quota", "supply cut", "output cut", "production cut", "cut output",
       "cuts output", "halt", "suspend", "shortage", "deficit", "strike", "disruption", "stockpil", "rally", "surge",
       "soar", "jump", "rise", "rises", "rising", "higher", "climb", "gain", "record high", "tight", "strong demand",
-      "demand boost", "rebound", "extends ban", "tariff"]
+      "demand boost", "rebound", "extends ban", "tariff", "upward", "upside", "strengthen", "bottomed out", "firm", "recover"]
 DOWN = ["surplus", "oversupply", "glut", "slump", "plunge", "fall", "falls", "falling", "drop", "decline", "lower",
         "weak demand", "slowdown", "lifts ban", "lift ban", "ends ban", "eases", "resume", "restart", "ramp up",
         "expansion", "new capacity", "inventories rise", "stocks rise", "sell-off", "selloff", "slide", "tumble",
-        "lowest", "pressure"]
+        "lowest", "pressure", "downward", "downside", "weaken", "drag", "slip", "dip", "sink", "bearish", "decrease", "retreat"]
 QUERIES = {"cobalt": ["cobalt price", "cobalt Congo export", "cobalt market"],
            "nickel": ["nickel price", "LME nickel", "nickel Indonesia"]}
 
