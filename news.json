@@ -1,6 +1,14 @@
 {
  "cobalt": [
   {
+   "date": "2026-10-20",
+   "title": "[SMM Analysis] China's cobalt hydrometallurgy intermediate product imports rose 78% MoM in September 2026",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOT1ctYkdwbHZ5cWJxaXgySUZyODE4VGx5U0JWTnh5VjlNa19hcURLVzFFQnVQZS1sUHlNLWd5WjBGUktDTVBnWXZSMmp5alhoVmU3S2NYc3RmSTVUbFc5Qng1QlZKQmtGem1EM2d6LXpPRld3M3JNc054WFZwVE90anFwaV9sZ3puNUR4T3NCdVN6UXYxMm40TmNaOEstcHo2VVBIVkl3YWNCQjV6UkpDaXh1THZ0Mk5hU3hQRXFSYWVMRWc0ajl6ZUNhQ1VlQ3RTSXhYM2xiblM4U1J4R2ow?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-10-19",
    "title": "Cobalt Blue Holdings Signs Kwinana Refinery Offtake Agreement with Swiss Firm STG Metals",
    "source": "Small Caps",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMnFCQUVheEl2R2FlR1gybVo3aXVIaG4tekpjR3FLZHlWRUJ0cHFheVc0QzE5bEVGQW9MdVdKV0VJaHhIWnN3YzJpY2ZuWHNFMWdvUjh5U3JjQ3NQeml2XzFpbHVlZEM5bXRmRElpSnp3d1JuSTU4bFNUR3QzOWNLRnNjYXNzTFd1QlNOblotRldoSVlQVDFzTU1xSWV1cGpLbU1yNUdreU9La21wWVE?oc=5",
    "score": -1,
    "why": "decline"
-  },
-  {
-   "date": "2026-09-30",
-   "title": "Nike Ja Twelve Time \"White/Cobalt Bliss\"",
-   "source": "Nice Kicks",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUHRGdXBha01TWXQ0Yk1XT0ZjdU8tOWswRzE0dmlnTXZlR1JGcVNpZGotYTNFRWxMTnppLTlydWNBSnpEeFk4UGh1Y3VTelVsVHFHbi04LUVEOVlPWjNlRlladTNUM2haX3VTOFlidmNhdGc2WmZMWHRFUXRIMkYtQjhn?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "20 Oct 2026 16:27 IST",
+ "updated": "20 Oct 2026 16:54 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
