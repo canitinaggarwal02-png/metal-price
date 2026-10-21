@@ -281,6 +281,14 @@
    "why": ""
   },
   {
+   "date": "2026-10-08",
+   "title": "Cobalt Demand Set To Rise Despite LFP Shift And DR Congo Supply Curbs",
+   "source": "Trendsnafrica",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNanBrWXg1V0ZGeXFNX2s4aXNYX0wweE1TWnRqdVlDR0VhbXNfMk5ObzdDZWszSFVPcS1PU3gxcXVZMmFnMnZEdkxLSEphamJLZFBsanVlazk0WUxMVEFDWThjU3d2SC1EMUpLTlRYeUl4SmZGMG9JNjJld1FEcjlKNHpoZ2RPMTBMUUVBajVvaHM1LV9DVVhwTWVtWDPSAaQBQVVfeXFMTUo0N3ZXQ18zZ2xrM29raTZUazJvV2ZCNnZ6M2lxUElPelFmeDhndjgzMWpHQ0t5czVMcFJpajVrdG9kVklHX3NGbVY1MTdqbUlPWldMQmxIeEZ1VHZhenFBSnRQZEVuRkFfblk3QTlqY1lsMnRSLXhqTUkyeWNMRWpvN1Z6ZVBSckhUNWJnWld4MFN6MllqWnlGUkQyOXpEc3J4T1Y?oc=5",
+   "score": 1,
+   "why": "rise"
+  },
+  {
    "date": "2026-10-07",
    "title": "Cobalt's 30% Slide Puts D.R. Congo's Quota Gamble to the Test",
    "source": "Wansom AI",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBtTGVBWXhodjBGQlozX2dEQzhVWkZEdFl1WXU3Zlp6U2NSM19acGU5WWhPdXNWVERydjliUnF0aGR5UEZWcW1aRXUyTXVfNFRQbTlRRE1PUUNkYXpzbk81UUJlTVpNZjBZVUw4?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-01",
-   "title": "Chilean Cobalt advances copper-cobalt projects amid rising demand for critical minerals",
-   "source": "Pluang",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM2ZTNmdDUjNHRWdNOGN4RXlIdUh0aFQxZUpPR3JXemZhZjgtT3dtTmc4TVpTOU1DUXl0MWZqQWhrZFJOTkRWWTNGeG1GRDd2bktXdkE1Wm1VUG5LR0pRTXFTb0NxTDN5SmR2b3JSWTN6NzFLem9JaHd4aF82M3dNM25GTk9MRXhnZ3l5bzRqdzNHRWQwQjlsYjFZdUNaTUlfQlNrZDFjaU8?oc=5",
-   "score": 1,
-   "why": "rising"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": "rally, pressure"
   }
  ],
- "updated": "21 Oct 2026 08:11 IST",
+ "updated": "21 Oct 2026 08:51 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
