@@ -9,6 +9,14 @@
    "why": ""
   },
   {
+   "date": "2026-10-21",
+   "title": "Cobalt Prices Fell Sharply in October, Driven by the Combined Impact of Collapsing Costs and Weak Demand",
+   "source": "Sunsirs",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xZFNDd2txQTI0LWplaUlyandzNzlUbG9BNGFkNDFfRnJucGlkWnpvQjI2dGlROWtQVUQzRlMzc0E5ai1VT1g4R1l5Z01sU2pub09GMjd2aURaYVplZFE?oc=5",
+   "score": -1,
+   "why": "weak demand"
+  },
+  {
    "date": "2026-10-20",
    "title": "[SMM Analysis] China's cobalt hydrometallurgy intermediate product imports rose 78% MoM in September 2026",
    "source": "Shanghai Metals Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qS3hHQ0VSRS1XTXM3b2NScDBUZXJJcmVxSl9oZXBIOFlGQzNJRnZrOFVQQ3VPX0Z1YVdiQ25HVlBKcUs5eWY2bEVPVUoxMm9HZXpUWjBvQXZ6NXpFM1NPSk9QVndvQlVQcDNfNw?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-01",
-   "title": "Cobalt\u2019s Silent Cartel: China, Kinshasa and the DRC Export Quota",
-   "source": "Geopolitical Monitor",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1aZFVLaUo4UjM0VVJ3c1FkTjZOWWlLUlNqUnFnSmRJeDRRV28wY2Jma2JkQ1NRWWc4M21VeFF0MFZEbk84VGlDZ3psQlRhTmExbWhUbjZGcnR3ZlJOWW8xU3JmYVdYUThBZmpKRk5QekpNd3RHUzlsdkR6VmRRUQ?oc=5",
-   "score": 1,
-   "why": "export quota, quota"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": "expansion"
   }
  ],
- "updated": "21 Oct 2026 17:28 IST",
+ "updated": "21 Oct 2026 18:01 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
