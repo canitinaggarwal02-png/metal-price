@@ -1,18 +1,18 @@
 {
   "usd_inr": 94.593871,
-  "usd_inr_as_of": "22 Oct 2026 13:36 IST",
-  "updated": "22 Oct 2026 13:36 IST",
+  "usd_inr_as_of": "22 Oct 2026 14:35 IST",
+  "updated": "22 Oct 2026 14:35 IST",
   "missing": [],
   "sources": "dailymetalprice.com / tradingeconomics.com (LME cobalt), westmetall.com (LME nickel cash), lme.com LME Cobalt Fastmarkets MB Month 2 closing, backup cmegroup.com Cobalt Metal (Fastmarkets) 2nd month (international cobalt), open.er-api.com (USD/INR)",
   "cobalt_lme": 34620.0,
-  "cobalt_lme_as_of": "22 Oct 2026 13:36 IST",
+  "cobalt_lme_as_of": "22 Oct 2026 14:35 IST",
   "nickel_lme": 15830.0,
-  "nickel_lme_as_of": "22 Oct 2026 13:36 IST",
+  "nickel_lme_as_of": "22 Oct 2026 14:35 IST",
   "cobalt_intl": 46892.32,
-  "cobalt_intl_as_of": "22 Oct 2026 13:36 IST",
+  "cobalt_intl_as_of": "22 Oct 2026 14:35 IST",
   "cobalt_intl_source": "LME Cobalt Fastmarkets MB, Month 2 closing (lme.com)",
   "cobalt_lme_fm": 46892.32,
-  "cobalt_lme_fm_as_of": "22 Oct 2026 13:36 IST",
+  "cobalt_lme_fm_as_of": "22 Oct 2026 14:35 IST",
   "cobalt_cme": 46958.41,
-  "cobalt_cme_as_of": "22 Oct 2026 13:36 IST"
+  "cobalt_cme_as_of": "22 Oct 2026 14:35 IST"
 }
