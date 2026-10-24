@@ -49,6 +49,14 @@
    "why": ""
   },
   {
+   "date": "2026-10-23",
+   "title": "Coda Minerals unlocks cobalt upside at Elizabeth Creek",
+   "source": "Mining.com.au",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRkNiZVhRZ3ZGUXF1ZE11VmlmTnkyWGdpMjNJWURneGtaYTJSVmZjd0NJTEZURzNDekRMQ3NEOGxERmY1OC10eDhzdVNLSjNaRVdWLTIwLVg5WFlobWF4YmVyX0R5OTYtVFBfeUpCQjB0eXd5X0tKMi1yMW1wSTFqMFpkcw?oc=5",
+   "score": 1,
+   "why": "upside"
+  },
+  {
    "date": "2026-10-22",
    "title": "[SMM Analysis] China's Cobalt Metal Imports Fell 37% MoM, Exports Rose 9% MoM in September 2026",
    "source": "Shanghai Metals Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY3pmU1l6MzJwWFZlUlBRLXQ0bDd6LTJwVHptVUZoWU5PTlVXRGZpcko4a3dEYnowSy1VRVVQR0lNSTUtS0Vpbk5qVFp3N3hORXk0Znh6ZnJRS29GXzFqUkNTeUlNczBPaDhzLXBtaFV2UnBrOW5CVDJ5ZHRtVDJxOEFsRnBmbFYtclk1X21neXpVc0ItcF9KWkJiRVdzendBY0tSTmtrSlVzVzJLdEFhZzlvcUJQX0xSZFA4aGNFUG1mTVZwSU9fVzBISzR1YnpvbURRQkxNM3ROYVpzM3V0ZXBFUXBiWGZMVjRCbTVTZmxsZkNfeGFvNWVRUzlNZHc?oc=5",
    "score": 0,
    "why": "recover, pressure, weaken"
-  },
-  {
-   "date": "2026-10-08",
-   "title": "World\u2019s largest cobalt producer spends billions on diesel. A $300 million project in Congo could save them $1 billion a year",
-   "source": "Business Insider Africa",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWWJMRzhRYkFNS1FlYXMtR2hTbUFQd2Z3R0JxWHlNalAxbS1SWVJISVFYTU9sNzAzX0pwWV9ZNUZTSFRSa1ZCaGlhU1RYX3Y2OXlNdXA1d3pJd1dKR29vVmpZTzRVdUpzNXA0OHUwZ244bGlHMUNadkZXaWtON2h4S0MxOWpSVGkzYU15Zk4xTkg1SEJrQno5NGpiQ3o2SzF6UllRRE8zMi1tX3puSlk3ZzF4TVRubTRQMG5HVDF1NVJaVi1WcWlGTFUtdlRvdWVESkhsU3ZscFE?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": "production cut, recover"
   }
  ],
- "updated": "24 Oct 2026 10:48 IST",
+ "updated": "24 Oct 2026 11:25 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
