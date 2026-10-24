@@ -483,6 +483,14 @@
  ],
  "nickel": [
   {
+   "date": "2026-10-24",
+   "title": "LME nickel prices rebound 4% w-o-w as Indonesian output-cut plans lift sentiment",
+   "source": "BigMint",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNV1gwc2hEVjBQdXRsbC1McDg0Ykd6QkgyVks0NFJPU2JpS0RoSVF5VGkyRlUtaENOREYwemFZNzlOdmNDdHdwbXB2MWZJWGhMWFVOOEVqYmQzelNMb0stRHhrZ01PYk5nYjJsSW9rdUE2Y0pNNzNGa2gxVXVXVmJfaEYzMHRXMDJsLWM4ZHdXTzJLMlViZERCcHlMaVhCaWtDQ2dKUXFoQ18tMzF6dVphM3JWbWlHUi1FbDZzUmlmMi05NVk?oc=5",
+   "score": 1,
+   "why": "rebound"
+  },
+  {
    "date": "2026-10-23",
    "title": "[SMM Nickel Midday Review] Nickel prices fell below 120,000 on October 23, as the global \"Black Thursday\" dragged the entire nonferrous metals complex lower",
    "source": "Shanghai Metals Market",
@@ -953,16 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9oSnBqS19YMkFyRGEwQWNwNTFTTENMUzdSVzh3VEh1TlljMEZyenpFcGNtSENUTjVCOWZIS0RpbXJBZkJGMDd1eUl0TVItb3pN?oc=5",
    "score": 1,
    "why": "output cut"
-  },
-  {
-   "date": "2026-10-21",
-   "title": "[SMM Stainless Steel Daily Review] Indonesia's nickel production cuts news stimulated SS futures to be strong, stainless steel spot inquiries recovered, but transactions were still constrained by demand",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPb1BRbWU3R1ByVVB5R0RLWkdIY04zX0NDc0FnSXJYcjI2ZGlmRjJXZzlQV3ZlZmZfMGZiMTNCXzB4S0N3bGo4cFIyZlMwUFRLdG5nSWc2S2t6WGtqVWtRWnJFOXNWRG04SHA1LW00a2hSQTgtcUpkQWhVenpHUGh4bjZ0S25DRVNLMkF3NHFpeHhIajJod2p4bnFjdW5oYlRuM1RBQzZpb1BuSW5uVEl3Q2QxVXppaEhZT285UlRJazIyaW1TaFpnNHAxX3gwUHZLQ2FETlFaczg4eUpOZVB1WXY5QmlqNTFHbWRZZk1xRGVQQk9UZXViaTF2dXU1bzltNEszblNWeklKMlFPdUVIMzhjdW96S2RuN05pYkpRQlVhY0c2VTRNVE9UUHd3cHFhNW9nNjRsUm9DcVhwemtmUGR5TnB2V0hOeDc3OEFfaV8wZ19DSU5WT090cDBWZkk?oc=5",
-   "score": 1,
-   "why": "production cut, recover"
   }
  ],
- "updated": "24 Oct 2026 13:26 IST",
+ "updated": "24 Oct 2026 13:49 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
