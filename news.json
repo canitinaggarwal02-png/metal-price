@@ -9,6 +9,14 @@
    "why": ""
   },
   {
+   "date": "2026-10-27",
+   "title": "Indonesian MHP Nickel and Cobalt FOB Prices Drop, High-Grade Nickel Matte Rises",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazluMnZXZ1FpNjQ3WUxwZmQtR1lPcTR6Wm9BTXdfNV9yME9leXRsN3NtQjFnRGlYQTVKQUVld3RLWlVrdXJfel92M3hYY0lIUXMxbElDSF9Jei1IR2xlTFRLTXBqdGI3dEgxRU9BYkYwTFJyWUY3bWNCZ0sxdEpOWGpkM2RYWjNBbzVJbWtSWGgtamt0WGQyUHktN0xNMzIxN3BmcWxlaXNQTkpkYlJDN25nY0hkU2ZFcDY0aGc1TVU?oc=5",
+   "score": 0,
+   "why": "rise, rises, drop"
+  },
+  {
    "date": "2026-10-26",
    "title": "Huayou Cobalt secures rights in Ghana\u2019s Ewoyaa Lithium Project",
    "source": "African Mining Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOT01KLWlVYTNBUXl6WWdNUlZjQ1VVRFZtRTU1YzAzTzZtT0Jybkl1S0JyYjZfOXhHb2ZjeTVCalUtTU4yWDk4VGt6WGJheDF6VUdoVGJaZ2F0Q1lscThCSjBRdVlha2ZuUVUzRjZ6bU56anZiMlppUmpmWllSd1gwSVZzOVhLeVRuTEQ2bVc3NW9lcnRWTU4wRDVQNlRNV25ZVTRqeWswQW03WXZrY2ZqaTVacmZnay1SRFFlb2pjS2dMaXBqRHllSkNnQmk3eERVUlEzUmRQUnJkblRENzNLWWY4MWl0aGlhTGhkZXhyUXRmTGZVSllQWFVFMXY0RU85QlZFLUp1YlQ1MHkwQWtEcnJSbw?oc=5",
    "score": -1,
    "why": "fall, falling, weak demand, pressure"
-  },
-  {
-   "date": "2026-10-13",
-   "title": "[SMM Cobalt-Lithium Morning Meeting Summary] Raw material price trends diverge; supply-demand support for battery materials varies in strength",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQZ19GQTdpQWpsaU9pSUZHbk43UHBkMlo4XzJ2bEgzbG5DdUMtMDV2WFNWUFlRUkF4S2dXeTdBeTN2eS0yelFqM2R5clBla3ZMaUxnN21paG5tV28tUlpOS0FpZ1ktSVpnc0h0TFBIaVR4SWx0TXhZb2VYZE1LV194d0FJcnhBcjZmWW1JdE1yRHg5T0RzYTQzVWFxSWdlbmVGUVoyTFUxcjJyUTE1VFl4ckpueDc0Q1pycHZqb3ZuYmt0OHRiVXVKcEZOWUtTaUY1bVBaU1NEazE2Y1VXZHR2VkxkWnUzQVJsdWZkaUJtNTdSMFVaa19KUHZmOUh4ajZzZ19LWE1WV3N3QlZqZGdUeDBn?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "27 Oct 2026 12:48 IST",
+ "updated": "27 Oct 2026 13:40 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
