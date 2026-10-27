@@ -17,6 +17,14 @@
    "why": "rise, rises, drop"
   },
   {
+   "date": "2026-10-27",
+   "title": "[SMM Cobalt Morning Meeting Summary] Raw material prices continue to decline, end-use demand is weak, and the market is under pressure",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPQ0lUcVhBRXk3S25CeG5wLWVqSGRYZTg5dnp0ck1rNWVHUVo0dGZ1VDZpTWx4YkdBdGVCYjctYWZHOEg1MmtzakxLOFhKV3U5QTZUdnNQTk5PLUZ0aVRFZTZhX2J0OHZJQXhHdDFoWk4tejJ4YWRGNXJoT1JQNmZxWHhFTjZHd1ZMWC1la0MwVkxxQU8xYXdGSVhITnBhbUhENlV2NWp5eUxIUVhCMV9aakRzejlYQ2U3WlVRZTM2Ui1Jekx6c05YbkJRSlBXNUVLV001bXdJOGFtdHY5U0RDNVl2UmRxWjJNU0F4c2N5U2MwMDBhSjg1S3kxYVgtcUJaa1FRTmtR?oc=5",
+   "score": -1,
+   "why": "decline, pressure"
+  },
+  {
    "date": "2026-10-26",
    "title": "Huayou Cobalt secures rights in Ghana\u2019s Ewoyaa Lithium Project",
    "source": "African Mining Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5icDIwQ2JBcmpJNEI0dXdIOGVJdE1hSjEyZnNrdjZGVm90Y3J5RU0wdDdfbl92Qi1nMzAtd2dHWWJWN1ZpYktCeWpUQjhjRE03Vkh3T3VNZ0FYXzI0ZHc?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-13",
-   "title": "[SMM Cobalt Morning Meeting Summary] Weak Demand and Falling Raw Material Prices Increase Destocking Pressure Across the Entire Industry Chain",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOT01KLWlVYTNBUXl6WWdNUlZjQ1VVRFZtRTU1YzAzTzZtT0Jybkl1S0JyYjZfOXhHb2ZjeTVCalUtTU4yWDk4VGt6WGJheDF6VUdoVGJaZ2F0Q1lscThCSjBRdVlha2ZuUVUzRjZ6bU56anZiMlppUmpmWllSd1gwSVZzOVhLeVRuTEQ2bVc3NW9lcnRWTU4wRDVQNlRNV25ZVTRqeWswQW03WXZrY2ZqaTVacmZnay1SRFFlb2pjS2dMaXBqRHllSkNnQmk3eERVUlEzUmRQUnJkblRENzNLWWY4MWl0aGlhTGhkZXhyUXRmTGZVSllQWFVFMXY0RU85QlZFLUp1YlQ1MHkwQWtEcnJSbw?oc=5",
-   "score": -1,
-   "why": "fall, falling, weak demand, pressure"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "27 Oct 2026 13:40 IST",
+ "updated": "27 Oct 2026 14:37 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
