@@ -113,6 +113,14 @@
    "why": "recover, lower"
   },
   {
+   "date": "2026-10-29",
+   "title": "FIRST ATLANTIC NICKEL & COBALT (FAN.NE) Stock Price, News, Quote & History",
+   "source": "Yahoo! Finance Canada",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1RamJBU3ZDeTdidkhPeXF1VXZCei02M1ZJYmtUZ2lKSDgxVnVlWmVOOVBKRlZRZTRpVFpfZ2JXUEJqU0Y2cW9leDBvWG9mc2o2U2ZoTg?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-10-28",
    "title": "Indonesian MHP Nickel Prices Rise, Cobalt and High-Grade Nickel Matte Fall on October 28",
    "source": "Shanghai Metals Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPS3hDdE1lNWpaTHRIVzhhRHlheVU5dEFhclloX2kyVDNPSHFEX1hFYTdJRW9mZTc2SXVVTllsb0YwZHNRRGQwR01tbG50RVd6OThmUXRseTREbFBhdFZyMXpVTVJBMmNLblF6Wm1ldHZwNHlCazQyY096UXlZQ0NnaUQ1Slo?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-21",
-   "title": "Coda Minerals Captures 83% of Leftover Cobalt, Adding Upside to Elizabeth Creek",
-   "source": "Discovery Alert",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZG1fU1RlQ0YwSktaTHBTV1VXVkR6U1BTNjNlRHJBWGhBbGZxOU96aUtqbWY1SzhmZHdoRmlodURFQVFwOS1ZTndzQ1VTWm81YVotS3FjLWwtUUxpNWpvUXlvSFFVXzh4cE5vQ3NaeTJCRVVheGdFRmFUYjhaNmFqcWlrRmRmMUw5TmNGME1hWTVYVS04SHAtX3QyUllCbHVZMEdabEI5YktTdGNnTUl5V3k0VQ?oc=5",
-   "score": 1,
-   "why": "upside"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": "quota, output cut, rising"
   }
  ],
- "updated": "30 Oct 2026 17:24 IST",
+ "updated": "30 Oct 2026 17:36 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
