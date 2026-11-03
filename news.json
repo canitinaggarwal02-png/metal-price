@@ -1,6 +1,14 @@
 {
  "cobalt": [
   {
+   "date": "2026-11-03",
+   "title": "DRC\u2019s EGC Says It Has Purchased Around 100 Truckloads of Copper-Cobalt Ore Since Musompo Reopened",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSlV0UE9OTGN6YnJsVk9ZVkhVcTVkRHg2bEhEY0pvUGFBUVR4Tm9vLV9YMVZtUnp1VU9CUXUzZERFOTFzREpuUzR3TjFRd0FSRU1RR0liVjhGLU93Q080c25ZNEp0dDRNNFYxQUM3OFJJTUZSaS1SbGt3X0FLd3QzZDRZTk1uVWJ5S3hXUHFQUDVuZlprb2wxdmNqWU95LVRmbTIxNzlxUjRmQ2l0SUdvclEtbmlZbjVQZmw2TGlGMTZ4LXJtV2djeXpIYmo4Y3pzOEVyek5qVTM?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-02",
    "title": "Indonesian Nickel and Cobalt Prices Drop: MHP Nickel Down $77, Cobalt Down $202, High-Grade Matte Down $85",
    "source": "Shanghai Metals Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNbDRIZTRjaVJ5V2JNLVVXLXYzc19XS3FBcXBPV2ZFS3FVYUVnRTlVa21oMXJ1eldYVHFxRUZDLUljajd3Sm42LUtQT0Nsclg2cUc5VGFrNGlvSkNFby1hQS1TSXJZdEtKZE1aTGdZRmlMQV9hRkJiQlYzYkQ0UmdmWjlyWWtxcE9MNnJPWU1YWTlrTk1rZTUzVG1HMmZkb3NQQWxOaGtVa0ZvUnpnNFU1MlhENjVwNnU0SS05ZHNwRWtJaS1tRU03Ti1SaUVuX3FJS2ktbWpGUTMyWjdpa01nVFlRY3lMRXUxYVYyNWVHM0NaNUlK?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-23",
-   "title": "Coda Minerals unlocks cobalt upside at Elizabeth Creek",
-   "source": "Mining.com.au",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRkNiZVhRZ3ZGUXF1ZE11VmlmTnkyWGdpMjNJWURneGtaYTJSVmZjd0NJTEZURzNDekRMQ3NEOGxERmY1OC10eDhzdVNLSjNaRVdWLTIwLVg5WFlobWF4YmVyX0R5OTYtVFBfeUpCQjB0eXd5X0tKMi1yMW1wSTFqMFpkcw?oc=5",
-   "score": 1,
-   "why": "upside"
   }
  ],
  "nickel": [
@@ -513,6 +513,22 @@
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTmFOU0VNZkt2WVdoSmszMHgxcVdMTkdZX0Q2TUdvQU5ROWxQN0ZWeUQwa0lVSmtrTmEzOU5teERkWkN4TUk1c19LWWlJbG0tQmhKWDVUQUk4dEZGS2o2UHNvYm9SV0lnQkxEbUJ4UUhYdkFHWVZXWThLY1hIX2djRks0bXR2MmlfMjFvZDA2eEdUaWo4TTBDcE9mOHlEUnZ4ZFJWWXVHMHFBdw?oc=5",
    "score": 1,
    "why": "rebound"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "LME nickel prices rebound above $15,500 per ton on weaker US dollar and expanding manufacturing",
+   "source": "Yieh Corp.",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWTN4MklZUkFwSk9nc0dteHhyZGFuczh2TmlkVi02SnVIUFlpd3VZZk9SWWJxVFR6SFJxZEFYSlJPSDR5ZllrUnYyb3FEbFlraXU3VzItVXpSRkRiYmFmNnQ1UVhyNC1Va2wxeGR2eGc5d0Z6eFF4OHJ5cGZHR3o0T3R5UXhiZGZCSFk5ZURaOC01NHRBM0RRclNLQWhMT2lQZklTMHZIZ3NZYThPVm1lS19PNlFxU1RlTGZEV2RBcGh1Qm8?oc=5",
+   "score": 1,
+   "why": "rebound"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Indonesia Weighs Moratorium on Nickel Smelters Amid Global Oversupply",
+   "source": "Jakarta Globe",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUG5lX2VLVlFZUzBXY1VDdENrNk9pdS15cGJsWHV3OC1UczVaV0p2ckVwWXRsVDhVS053eEIzNkFWd0x4dHRTaDIyYmppWmR3ZElCdkZQUjFTby0yNEh1Q2NPU2h0Zmh0OXJYUHdiSE94dktrSUxVTzU3WU51ekdwZWhRRDJrNEZEVFM5Z3BIVl96dl9iTktycTZlTUo2R3NpR1owTA?oc=5",
+   "score": -1,
+   "why": "oversupply"
   },
   {
    "date": "2026-11-02",
@@ -945,24 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORmdWZjRWaDZ3UTFtZVJnYlJxTlN1bUxEcFBhMDdxdC1id3lHckFtS0xRYlNkOXhEVVpZdDB4TUhHYjJvRGZ3NlJtUUY5d04wbXNaSjZyOEVTRDlUZGs0NG1kaGNxNjcxbmc2SDI3cVFxTzZCNHFSYlV1TDhTTmdWOXZhOHBGbnlHNEIzcVhYVEhxRzkyU0tXcg?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-28",
-   "title": "Glencore, CNGR Invest $40M in Centaurus Metals' Jaguar Nickel Project - News and Statistics",
-   "source": "IndexBox",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcmV0VVVpY3A0b0E0SUE0d282aUpHbzF4dV9PQk05X2JUVUJpTkUxNWpDYVltUkM0eW13aGU0RjM3ak1Uam1sNXdQQ244aVJyMTZmMmczbkdyS0UxZWliZTVVUzRpQ1I2dFFFelU1VGtuRWxqNlhFWnctcTAxM2l4OEl1cUdyT0Etc1EtUnFZS2o1WG9KTERKUGxLX01DR045NWozbVhmU3loLVczTXdIZEsxcw?oc=5",
-   "score": 0,
-   "why": ""
-  },
-  {
-   "date": "2026-10-28",
-   "title": "Nickel Tabs Market in Japan: Size, Trends and Forecast to 2035",
-   "source": "IndexBox",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOXEzVjBoT0kyalRyMVJZaERRSm1ETGZCTUJkbUN6QWtWVmJrRjBPdGN3M04tUVN1QXVXYjR2NWJvakkydm9OT2ZkSnhJMEtKMVZyWmhUeGgxc2NFcTY3TTRVY29fNm1ZTzkyWEdrcDJTb2M5M0p6UjJKZzIzZ1dxdmZOWHFmNTBrR2Y2Y19wWnR3bzdtWGREWUhTcDlZQmc?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
- "updated": "03 Nov 2026 12:17 IST",
+ "updated": "03 Nov 2026 13:30 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
