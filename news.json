@@ -17,6 +17,14 @@
    "why": ""
   },
   {
+   "date": "2026-11-03",
+   "title": "DRC Orders Mining Fraud Probe After Seizure of Trucks and Copper-Cobalt Materials",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX0VTRDZXbzRha2xLNkVZT3NiLU91OG9Ld091SnI2eG5uMXcyeWlyTjNrbWIxZkZzcWY3ZE9FbG83WXE5UGZhZHV2Y3RQSmhxVFh3eDg3MTRVNFVkR1VoRkdHNWJBWWI1bVE4eTEtRWcwaG5EODAxRHR3dlBrcVlfUzQ5Ujk2MjQzTXFQQzNZXzBXSTQ5Y0pOODN1bUJSZmlBTmd6cDlTZXBVMnh1SHpxajJwWkV6SF9hWUNhSXJHMDJhY0U1ZktoWA?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-02",
    "title": "Indonesian Nickel and Cobalt Prices Drop: MHP Nickel Down $77, Cobalt Down $202, High-Grade Matte Down $85",
    "source": "Shanghai Metals Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOdjRESTZ4T0l5UFV4RG9aZFVURGl4TFdGdzc5UjJrS3h2eVZFczQ2Wl9zSTR4NUUyUFpUR3FIVHhqZllrMHQ2aUdTT0NtYUZVYUh5cnA1Q0UwV0kwVmgyOGpScHRBNHZHX3FZVzVicnExS0FKX2FjYnVaV3YxYmhpRWpQWlJxUFgxMldfdnNOR1VRRVdlMVdIUXA4T3lOcjBOMkdOTkM4d3RicWJmXzR2TkFiZjhJY21wTmxJMGRpeTMxN01nY09QSzhhQ0k0Y1d3bFV1bGk5bmtITG1JQTNGVHNjcFJxYURtb3VtR1BLWmxrbkVrcS05Z2Fn?oc=5",
    "score": -1,
    "why": "pressure, drag"
-  },
-  {
-   "date": "2026-10-23",
-   "title": "Cobalt product prices remain under pressure, with some enterprises in the cobalt salt market falling into losses. When will prices stop falling? [Weekly Observation]",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPYWE1X1VwQzhnZk1jYW5kZ3RUS1Iyd0VERXNmdktCVGFWYWc4Z2dhZFp3cGs1Y05QOGV5VzU1WnZMN1BkUmNCbFVoT3BHejFkZUtmR1d2V05xdkN2bjlXSzRGWVFYQkg4SXVqYVNLY3ZrbFNmaXBKeTZoUHR0ZEF6UkN1OU9wNjI3aEQ4TzB5dFNvQ3NpSkJEQUhmNnREM25zWk1CRXhkNFNkYnZPVUZtb2xSMnpLbkRpZ1BZQ3J2MHNlLVNrNGlhbXJ3UnB2UFFKMG53MEdQT3ZhVkdSaUQ4NmJNR0xITkFTNzRLYnFtSEJKQVdweHBaNl82dU1sazA5enk4ejVNcE1CenNvZ2dfNC1rV3pvbDFaMXJibDNub2ZKaXV4WkpObk5rX09Tdw?oc=5",
-   "score": -1,
-   "why": "fall, falling, pressure"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "03 Nov 2026 15:15 IST",
+ "updated": "03 Nov 2026 16:15 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
