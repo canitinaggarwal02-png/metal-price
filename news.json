@@ -483,6 +483,22 @@
  ],
  "nickel": [
   {
+   "date": "2026-11-04",
+   "title": "[SMM Nickel Sulphate Daily Review] On November 4, downstream purchasing sentiment was sluggish, and nickel sulphate prices declined.",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPSkpXLWN3Z25mQkpMRDFITTQ0OVhoQmZHZXhkSjBHNHRRWEhMRjRIZm5ldGsxaFpkX0ZmY2RYckdRR3RNUXJxM0VQeURlcUhvY1c4ak5DS3p6aVlrTDZ0Q283U0ZLMm92Y3luV3gzUU9wa3l1VDlOOUZfb3FDMkVYQWdGWjNXMV96Z3haVm84NzhVWmNWMkctTlBxaFBhcllablBIR3BZTXlwU2tGQ2l1eVpHYktmalhDSUxUZ1FXa0pPRjRqMTl1dTlWRHZBQzNqbkIxcDR2M1lCcEltSWE2VEU4cnMyTUxjVTg4UWdiRGdVUzFqalMwTWJ6bUNrUWNuNnc?oc=5",
+   "score": -1,
+   "why": "decline"
+  },
+  {
+   "date": "2026-11-04",
+   "title": "[SMM Nickel Midday Review] Nickel prices fell on November 4 as US midterm election vote counting remained deadlocked",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPblNYOVdOM2prTXFKcUhjcHRKSFp4UGRaMGxLX3FubnVpSHc3Y0t5U1FfVXBHNHZxUDZZQUQwYWstZVEyTWlwQ1JTQnJ3UXZVOEZ2YWYzWlZCZVRzWEF6WVZkeW04NDI5b2NZOGV6T25TUFItcElJUWM0bW9WVk53dGY4RmotcXEyMFRydFl0SnBSekF6R0FZeXp0Vm1RUEV0UnYta0JTSUMtU2dGUnhXNzRyaW9LR1hraXQ2eEthdlRqOE0xMDFmbTRHanVlNEs4Tk1UV0V4ck9WMnJTR2NPam5sMVpMeFVicTNDcDNtNUM?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-03",
    "title": "Crude oil plunges, gold and silver rebound strongly, most metals rise, LME copper, zinc, tin, nickel, and SHFE tin and nickel lead gains [Overnight Market]",
    "source": "Shanghai Metals Market",
@@ -945,24 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZDdKU0d3VWpEcHRlbUhMSWpILXRnV2dXNURGNjctS1VhbVpvVlBjYnpRa3V0bUpXRTVxOEVOeldpNVRuck1nREk4ZFBVMFNvT0VFaEZhMFUxWExacVdtUWZyTFlCYWVSVVVLOWx5NGwzX1puVFVBam90R1VITV9aeXlvSnQycHM4d0gwdDR1VVhZSWhGM3BEQ2RRaDdGaU9uc1ZsbmIyVEY5ekt4Z1czZFZSMU5TRm4xTVRNSDRwMzU?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-28",
-   "title": "Philippine nickel miners expect output to remain flat amid weather, price pressure",
-   "source": "Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbTZubFRxeHQwOUZsUks5MmpEM2FmcUNDdHNkc3RmUWZ6M01kcXVsUGZwR3YtNlgwYlRwTVZjZFlRd0d1cmQ1cGRIbWUxWkNGRldVbXdGMXdDcTFQRWxVUHlObmtIa2VuTmZDNEw0bEIxN1Bla0Ezak1ldmtHMzdWbFNKSlN0UzlreGVsVWQwQUdQXzFI?oc=5",
-   "score": -1,
-   "why": "pressure"
-  },
-  {
-   "date": "2026-10-28",
-   "title": "Indonesia\u2019s Coal-Powered Nickel Boom Raises Emissions Questions for EV Batteries",
-   "source": "CEO Magazyn",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVkVPS29ESTZlZXdlaHVwRGM3cHNHZmItdl9oMXU3Zm1Wdl9qXzFzQ18wVEtkUnUtTzFXS05relRmNlZseVhZX2lDbTVBTWRNVmRUYjltQ0oycXhZeXRQVHlDNjU4enZkRjE0QS1tYnVXekdWNGZiWVVyR2lMWW1RemJxMFpRaTcx?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
- "updated": "04 Nov 2026 10:13 IST",
+ "updated": "04 Nov 2026 11:16 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
