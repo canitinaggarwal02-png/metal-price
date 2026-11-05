@@ -483,6 +483,14 @@
  ],
  "nickel": [
   {
+   "date": "2026-11-05",
+   "title": "[SMM Nickel Sulphate Daily Review] Nickel Prices Surge on November 5, Nickel Sulphate Prices Rise Slightly",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORXdOZTkzY1luRnRCMzE2REZWQzA0UGsxWThtZGV3Zm1NTnpyeDdaSUE3S01qX3dJVzQ4UVZIcXBSNElHM3luRXhYcFp1ZDg0d1F2QVQ5dktDa1UtWFUzUXpCVmJxWWZBQWpGSmRwLWV0T1RIeVpzQ3RaQms1czFkLVF2RWRUWEItUlBJZ25LNjdPQXhsbElFMUsxUzRhQk9YV2VOeUdlaG1Cand3VGpqTEtSbUNEN3ZsTkNFUG42a1otcXIzU3plRjNFRW1nZ1VpY2RRbFV6NGl6bjlCY05BdkZB?oc=5",
+   "score": 1,
+   "why": "surge, rise"
+  },
+  {
    "date": "2026-11-04",
    "title": "[SMM Nickel Sulphate Daily Review] On November 4, downstream purchasing sentiment was sluggish, and nickel sulphate prices declined.",
    "source": "Shanghai Metals Market",
@@ -953,16 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQZlo1VnVESkpKTk1BNUJCVl9zcnhNbGt2Zm9JNnVJSEp0a1g1dVJ0X1dSaklDNXlOVi0weDBYZVRTckFVV2pxb3hQMzc0aWIzZzVFZmc2SlczbThENHJ1WDUtekp0QktsQWlRRS0zRllNOFVGVVRKS1NybEM3eDdrajdYUXVSbEtxNjBSMzVoU1h4UHNyLW1acW5KSkVhdkxPZXFCZkV3U0R5M3JRc24zcENWZlFRckFUekt5VWx1ZUhOSWtwNjl0Tk95VWR4X29iakx3MkJOUk1XVmoyWUZiQUhIMHNpcTlJOHBLclpFSTd6ZFdkTDVQV1Y3ak9MUGdOTDBIdVJmUnM3UGgyV3JVWE9Ka2hOY0JyOXQ2ZzNWdnhVaUNnY2xwN2RuRmF6SEFsYTJMYg?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-28",
-   "title": "LME nickel prices rebound above $15,600 despite inventory rise",
-   "source": "Yieh Corp.",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbEJ2LW03UXlMTF84U2VYbGg5X0oxa0NLQ1ZGT1J4NHZCdEVwTGN5cWkwWEpHSW8xN1ZEMzRpQ3ktYVg4TEJqYTNKOUl0Z1kwTklLeWNIVHc1OFRTeTNxM2FkcWdiLS0wTU9zT0xfVjlrZzN2Z2Vidl9ZM0Rnel9Wc05KZ0N1VWpweVN5NUZuZ01KU0cwTnJ3?oc=5",
-   "score": 1,
-   "why": "rise, rebound"
   }
  ],
- "updated": "05 Nov 2026 09:12 IST",
+ "updated": "05 Nov 2026 10:16 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
