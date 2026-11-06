@@ -33,6 +33,22 @@
    "why": "gain"
   },
   {
+   "date": "2026-11-05",
+   "title": "Cobalt Joins Wiz Integration Network, Bringing Offensive Security into Cloud Risk Workflows",
+   "source": "Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTlhwbGZ1S3NEaldOWi16eFFuWDVPLTBMci1pS1RFNzBlNHAzNXpIOFVqYTZGRTlUVndxSW9PWkdiZktabzRRMXhhT0xaSGdvWk9uUXp0WXVVNWRRdXlwekVHLW9ZZDhVUE8wdXhEZmpZaHRNM2hZRnRzVERrQ1o2blVOaWNMM21zdHZfamJSV1FrUHNfVFFYd1pIWlJxbnVxYWc?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
+   "date": "2026-11-05",
+   "title": "Cobalt\u2019s $100M North Shore Sports Village advances in Wisconsin",
+   "source": "Finance & Commerce",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeVNEem90bldwNkVRVEdqd19RV2tKck9Fa0Jhcjh1LXRDMjVrNE92MWdta29nZ2pKYk1jWGVpbGtOeDRYSk16akdGY2N4YVpnZy1vZGpGcHFPWUZMUEFFMG1UcldlOWpiMUdMZS1xMHljd05xc21hZDI2OGVuS0ZndUVUSU5xaS1KbHc?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-04",
    "title": "[SMM Analysis] Cobalt Q3 Earnings: Inventory Write-Downs Squeeze Refiners Amid High-Nickel Growth and LCO Cuts",
    "source": "Shanghai Metals Market",
@@ -463,22 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBrNzkwQ2VOUHlhUHUweEo1UHRWSzZjWHd0UUZxbE5kSFlaSXkydHgxVTZNd29fck03aDY1NmZPWklZZFRSc2FsSnA2ajcxUmM?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-27",
-   "title": "Electra Keeps Cobalt Refinery on Budget as Build Accelerates",
-   "source": "The Globe and Mail",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLWp0UVcwSkpRM1pENEhVak05NU5WNjkwMHpXOWgzQUtwNFF2T25pSGJKYWJrM0x5VmpYcHBmc2UzRnRBUzZyQXRFeFhlS2pHMTFsRjA3RndXaVpENjlfXzBBOFhMZWdZWlJVUElTcDB6elhNR2RrLW5OaVVuSEpETFkwcVdhUmNlRU41dzVKR2hheURzZ2I2eEhhVFkxeFJxVW82b2oxaHVtOTAwbkdjVEFaMXpLUVlOWmJUMXpnZTg1SDJDX2Jwd3ZzQWdDNUJwUkRRT0o1aW0?oc=5",
-   "score": 0,
-   "why": ""
-  },
-  {
-   "date": "2026-10-27",
-   "title": "MIDHANI signs MoU with HWB and BARC to recover nickel and cobalt",
-   "source": "scanx.trade",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSkpjckxxYVk3WDhBY0oyZk9NYnRiNjVrclVOMEdmekE1WXVOY183aURySlk3Tk16XzdWTHlVaWh4N3A0MW9HNlY3M2pMQ0Vhc25Odnh6Q3FvVFpWMURONG1kVkxnTUdoU2dvYl9ZbmlXRHo3bmh6NzhZbVRfbVhQTW9UME9nVjFxYlhsNVlJUGFRTXRFQVdaYU9GOWttZ1ZqcDhyQ2tYcG4?oc=5",
-   "score": 1,
-   "why": "recover"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "06 Nov 2026 10:15 IST",
+ "updated": "06 Nov 2026 11:16 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
