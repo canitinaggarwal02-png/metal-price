@@ -531,6 +531,14 @@
    "why": "rise, rises, slide"
   },
   {
+   "date": "2026-11-06",
+   "title": "Nickel prices jump 3.8% as Indonesia cracks down on mining",
+   "source": "IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRVpkTkdYVEJzTGlfRGYyVEkwNkluT3ZFTHp5Z0YyRzlDRTlSV0ZZbEk5R0FMcC15WGx1Z2lzWTNrbFFuYXFqeExXY09jMEg1UGJzcXRGaGs0R1pMVVhhQlBqdGVVeE9IeE9LOHlmVmhkaDFqeWJJeDBwVFA0QUFRaTE4ZFBGTVNCbnJuR2QwaW9feWdjYUp1SmpwQkxjTFU?oc=5",
+   "score": 1,
+   "why": "jump"
+  },
+  {
    "date": "2026-11-05",
    "title": "[SMM Nickel Sulphate Daily Review] Nickel Prices Surge on November 5, Nickel Sulphate Prices Rise Slightly",
    "source": "Shanghai Metals Market",
@@ -953,16 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUjBKUm1STXJBLUloOTZHT0pVWkU5ekhNMnpNbTVNTU9ZZkJNRVBDU2ExMGZ5NDZfcmRtQjNadFJWS2Z2Q0F0NGRGRWVyNjNtMUFfRFNUTGRWNENOdjV6SHJiOHZXUDgzRjF6NXVBTFRLUmk5ZXJnRnNwM281a2pDTl92ejlVdi1rLVZPM1pNS0JpM1hicjlUeDdaenRnQ2hOMmxVWUZCbzRnZGZSVEhkZ05pNkpMUXMtcGxZZnNLNGFLQ1lxcUVYNEkzZnVvQQ?oc=5",
    "score": 0,
    "why": "supply cut, fall, weak demand"
-  },
-  {
-   "date": "2026-10-30",
-   "title": "SMM Data: Battery-Grade Nickel Sulphate Price Drops 25 Yuan/MT on October 30",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYUZNUmhUOXJiSmtJakxCcjRjUndGNDA5ZjZwOGJWeUVQNEg4cGg3Tkc5M3dkSkQyZVgtaDFEb1dwUkNtUlBZdWxSNU05TlZVcnpCWlFCMUo1a0dQSU9LNHlfRTdLank0aGE0NDFpVDdpUHNoZ29XaHllMDZkZWFka3RudENKRjVMalJ2QTByQXMxMXV3RWprMnU0dUZSZmlkN05QTUpoTjdxc1FfZ09zaU9rVFdkUVZFc2Jic1ZVOA?oc=5",
-   "score": -1,
-   "why": "drop"
   }
  ],
- "updated": "06 Nov 2026 14:50 IST",
+ "updated": "06 Nov 2026 15:56 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
