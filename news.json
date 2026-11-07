@@ -603,6 +603,30 @@
    "why": ""
   },
   {
+   "date": "2026-11-06",
+   "title": "SunSirs: Loose Supply-Demand Balance and High Inventories Drove Nickel Prices Lower in October amid Market Fluctuations",
+   "source": "",
+   "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aeee3bdb6a54356827681ca402b7979&url=https%3a%2f%2fwww.sunsirs.com%2fcommodity-news%2fpetail-37460.html&c=6975279874512634348&mkt=en-us",
+   "score": -1,
+   "why": "lower"
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Nickel Market worth $80.68 billion by 2031 - Exclusive Report by MarketsandMarkets\u2122",
+   "source": "",
+   "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aeee3bdb6a54356827681ca402b7979&url=https%3a%2f%2ffinance.yahoo.com%2fmarkets%2fcommodities%2farticles%2fnickel-market-worth-80-68-114500449.html&c=16789490365790522967&mkt=en-us",
+   "score": 0,
+   "why": ""
+  },
+  {
+   "date": "2026-11-06",
+   "title": "[SMM Analysis] SHFE nickel rose 4.7% this week on expectations of tighter Indonesian quotas, while Jinchuan nickel premium pulled back",
+   "source": "",
+   "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aeee3c454e741b79d10f25c69ccc5e3&url=https%3a%2f%2fnews.metal.com%2fnewscontent%2f104210126-smm-analysis-shfe-nickel-rose-47-this-week-on-expectations-of-tighter-indonesian-quotas-while-jinchuan-nickel-premium-pulled-back&c=12290882460402467851&mkt=en-us",
+   "score": 1,
+   "why": "quota, tight"
+  },
+  {
    "date": "2026-11-05",
    "title": "[SMM Nickel Sulphate Daily Review] Nickel Prices Surge on November 5, Nickel Sulphate Prices Rise Slightly",
    "source": "Shanghai Metals Market",
@@ -937,32 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObk9LRFZ5Szg1ZnZEeUNvY3h1MDRvRGNxR2pNQldUa3o0ZnVQVDc1U3F1OWFhdlA1ZVV5YnBteE9fM0QwWEljeGJkQVprUFpHVnN0UFVLMVhfTjFfWHNicDc1bVhDaWN6UFh3cWtJemMweG81YzFOZmQ3VTBUaWRpUS0zdGFzTElISWN4V2V1UDJOaFI5M2c?oc=5",
    "score": -1,
    "why": "fall, falls"
-  },
-  {
-   "date": "2026-11-03",
-   "title": "Indonesia's nickel ore imports jump 62% in September",
-   "source": "Petromindo",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUTU5bTJCTmhJQjR6OFBoQnhEV3VKU3RabUhPYTRHN055NXBxa1lSakx2d05mWWJQY2tzYTd2d3NPeDBDdmFDZWNYdElrNUVoakVWVzlabnVzMkl5cFduUDVPWUNITWJSZW1EaVRiTlhUWW9YYU1IbV9RUTN2a0E2dXBOV3k5bVM1eGpsWFQwX0hNMTBBOWc?oc=5",
-   "score": 1,
-   "why": "jump"
-  },
-  {
-   "date": "2026-11-03",
-   "title": "Nickel Workers Call for Reforms as Deaths and Injuries Add Up",
-   "source": "Earthworks",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTFJ4enk5UmpvcHRIRDllQUtuWEFuMURqNmRlUWF6bHh4OXhzdEJNNlRJVVpBeFc5dmt0R1E4QVFzVHJDLUNsUWl2LVZRMmtkWGZGSVZ3cHBoMmpTYVQxSlduQVRyYTBJM3B5cHRBUFhmYk5YaEd2cVZlVFdXMUx6Ulp3ME5CSG9vcWlGSjN0aXJVSldw?oc=5",
-   "score": 0,
-   "why": ""
-  },
-  {
-   "date": "2026-11-03",
-   "title": "Indonesia Signals Lower Nickel Ore Quota for 2027",
-   "source": "energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM0RGdGtvN1ZlVE02eWdlMW9BQWtQQkpZSGlCTzB3TVFRaWVwLWUzV1VSVUh3UVVYcjYtenBoY01WdzVHdWNuOTQzR0hfOXFiTldEbUNMT0pURVJQamg3MXFOdmtwaUhETGcwUExQdVBKWnpLZFA0c0ZUOFV4OXRxZQ?oc=5",
-   "score": 0,
-   "why": "quota, lower"
   }
  ],
- "updated": "07 Nov 2026 13:18 IST",
+ "updated": "07 Nov 2026 14:08 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
