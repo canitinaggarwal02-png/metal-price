@@ -25,6 +25,14 @@
    "why": "pressure"
   },
   {
+   "date": "2026-11-08",
+   "title": "Cobalt Cafe (2026) by Yigal Ozeri - For Sale",
+   "source": "Artsy",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NM0FJMy1QVEtiaE9mbHJINURPcTlxa3R0ci05a1JyTWhHb2RZWVQ3cmhoRkd0LVlCQVoteXpGUW1LWVBpX2JFdXE4dVI2MzRQeDJXT0lYMlVCcjR4YVpHVVlfay1rZw?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-06",
    "title": "Glencore's Cobalt Collapse Tests Faith in Marketing Arm as Copper Sags",
    "source": "ad-hoc-news.de",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTnAtVXZkMkVkS1VjbHpHTzY4WEhDU1AwU3B6ZVAwUUk0RldRU1k4MlRMbVpjNWJZQmd4NmhUcmY1WHpleWUyQTNCY3NQaHhNdDRURWM4alBvSG9sZVdhSXBRWXNoSW9NdWNjV3RVb1FyMnRadUEybkZKQWtjdURlTGhJNWVYcVB3MUlnaDNHR2VuV0N6ZFR0a05FSVVfdGdNcmFBUFJ5TDdUcl9WX3NSNXoyWDdnOVhBTlN1UUNabW5KcXA5SzY5UHYzQXA?oc=5",
    "score": 0,
    "why": "rise, fall"
-  },
-  {
-   "date": "2026-10-28",
-   "title": "Cobalt Recycling's Next Constraint Is Feedstock: Market to Reach US$5.78 Billion by 2035",
-   "source": "openPR.com",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZFUtY3hOWFRkdjVmU2JwWWdaV2xyUEI1SHRuSVJOUHB0RHg0TmhYNDlJWkRDTWc1WG91V0NpdDJXMk9HRFJYWmVVYm1OSnZQSWdLeEtqSzVLTG9aTTdISHVQUWJWMXItblhCUHhjakJCQWlSM3k4NzBaVXRDYVZlYlhmN0lMdWdBd0J6LVN2ZDh3MWFD?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "09 Nov 2026 16:15 IST",
+ "updated": "09 Nov 2026 17:14 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
