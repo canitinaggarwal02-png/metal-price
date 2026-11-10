@@ -1,6 +1,14 @@
 {
  "cobalt": [
   {
+   "date": "2026-11-10",
+   "title": "Cobalt Blue Holdings Ltd (COH.HM) Stock Price, News, Quote & History",
+   "source": "Yahoo! Finance Canada",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5UTGhsVVhaZ2U1OTJybjgzREd1Umx1VzlkVEFVdjl2VzlKS2hMZEVVaVk5UDU2eWdjT19JMmFPNlpQcWpRLW5YZVFfNkVxa2lqQmFQOQ?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-09",
    "title": "Congo pushes US to implement mining investment, localize copper-cobalt processing [SMM Copper Morning Meeting Summary]",
    "source": "Shanghai Metals Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB0cFhSbGJ5NW1oVTNYYW9kbVY1Zy1xaUR1SFdzV1h1SXM2SzVIcDhSSUZPNVNDUkl3eFg1eUhqX096Mmo3QjNQLUJjQndJVFJnRms4?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-10-29",
-   "title": "Fortune Minerals Advances NICO Study With Gold Recovery Upgrade and Lower-Cost Cobalt Option",
-   "source": "TipRanks",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUWNjbjVHSzRQUkxhU1lBbGh6d0x5cmt0d2FrdUJiekdDa2FOM1BNbV8xZW41djgxQ21oWndTWFdfMy03c004SlNzM1o1d3I2aFZ3REc4WUh3M0R0OVdzZk9fTzhqeERYaHF3SU9uYVRRZnc1dnoxcE15U2J6TENCUS1aZC1VLTRKb1lENnFRRHNjSXNnM1BpMEdDbXkyMkxaZnZ4ZDNoM1BLMmZTdFR4RFdPdG9NTlpQeEtHeXJkaUR1bk4wcTZXeWRRTXhaWFRGaHM0Wlh0Q2JzZ0J4?oc=5",
-   "score": 0,
-   "why": "recover, lower"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "10 Nov 2026 15:14 IST",
+ "updated": "10 Nov 2026 16:14 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
