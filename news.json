@@ -1,6 +1,22 @@
 {
  "cobalt": [
   {
+   "date": "2026-11-13",
+   "title": "[SMM Analysis] Nickel and Cobalt Price Rebound Boosts Sentiment, Nickel Intermediate Product Payables Edge Up This Week",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPNXlRTndwR040cTY3UFNZYjJZSElFVHdheDRwaDROSE44NmV0b291aTVLRTdkZ3pEUEE0TVktejZldkVBV1dlZVR6dmo2c0pmM2FVbGhpNVJ2NXZyd1lESUN1WGJmRktacWZ3bXN2Tnk4UTVWeFF5VUtlM1JSTTJaRHlqTmlpWC00aXo5ZEhUaVlSNWRNaDlfZ0w2SUhSU1lOX0xJUG9zZExoU3lqX1VpOUxZRzI0S19TVnFhYkZ6RFAxc0hSUUlUQkxvYi10QVFCRl9GRTVwcUpfcUt0b2Q2dDZuY3c0VkRUbzJWMFl4a05FZmp6ZnNvZUVJa2VVbjV0VThQOFQyZ3RHbGphLTNENGtDaWJNZi1NTWtZ?oc=5",
+   "score": 1,
+   "why": "rebound"
+  },
+  {
+   "date": "2026-11-13",
+   "title": "[SMM Cobalt-Lithium Morning Meeting Summary] Lithium prices stabilize at low levels, cobalt prices retreat after rapid rise, new energy demand remains under pressure",
+   "source": "Shanghai Metals Market",
+   "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPU1Exc1NOekFRVi1sQWVvOWNNaFBBRTAtZDllTkVxQ2tMQjRLelZ5aTFWSUhKN1Y1WVN1QVlNVzUxV2xuTVB2anRyS0Z5eDl4cURXdnFoTjgtZE1zeTJzYlB1Z3h5QmZ1c0tULVNUa1VabUVMV2FUN3JvZ01DMWgwV3o3YTF0NnBrMXZFSm1kbmlYS3Ria1lTei1vdEJLOEZ5RHB1a1Z4R2xiSFZrXzNZVU5KTlF6UmVSZktsc3BuU19NOG0yZU14V1VkbWxhaWg4ZmFaQmxtemJKREJ0b1RFSXBiMmJGb1JXU1lfdUhGZFN4SXpJTW5lSDVnZVJnWFhZNkNwWHRJRWdLZTVPTTQ4dG9RblVvclplMjc3TTVjTjZBYXRvWUk3YTdmbV9nVEUzY2ZRUk1kbTBTblVaTlBtaGhWSnZkSVFCVVpISmhxdTJVd0xORkpV?oc=5",
+   "score": 0,
+   "why": "rise, pressure, retreat"
+  },
+  {
    "date": "2026-11-12",
    "title": "[SMM Analysis] Weekly Cobalt Market Review: Prices Rise Across Products Amid Capital-Driven Trading",
    "source": "Shanghai Metals Market",
@@ -37,6 +53,14 @@
    "title": "First Atlantic Nickel & Cobalt Corp. (FANCF) Stock Price, News, Quote & History",
    "source": "Yahoo! Finance Canada",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBYNklocDRPYUZpTXJ4dkRrdXF6VmpVbGgxd2N1amF4SDR6Z3NYajdTSG1yLWtwc3pjRHZSSkE5blNGVFh1Nl9GS21SZXhsR1NXOE4w?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Cobalt Blue Holdings Ltd (COH.DU) Analyst Insights, Price Targets & Recommendations - Yahoo Finance",
+   "source": "Yahoo! Finance Canada",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ub3JyYzRvQW1pcUJZN2hqXzBUY3E1RkJDVDU1WEo3ZkpYcnNNNFBTaHRUZ3ZacDhTbXo2NVNtRWZTdFNYV05KQVZOSkpVbGVUUzRfN0o3MzhoekpsWmFKNVBsR1g3RHlNS0Zn?oc=5",
    "score": 0,
    "why": ""
   },
@@ -455,33 +479,25 @@
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQd2xwc0NaYXlOVXlkbDg4UkVhMGhZVmxBV01UbTBFUmdaMDl5RHNFZGdwX296S2lzZFQzUFQ4LWtHTHFZVE43UGFxcE9raWhtYWlxLUx0UnJaTEllUFRTZk5QN0pPcWFaalRVM3FpSmpESDlncjZGMXJHeFRyRzQwT0ptbEoyM015U2puQXRicFpwUlBKcmdMVndhU21NT1IxaDdDU0xCeFZMX0h1MHpSaFpXQnNzSVRt?oc=5",
    "score": 0,
    "why": "rise, rises, fall"
-  },
-  {
-   "date": "2026-10-30",
-   "title": "[SMM Cobalt-Lithium Morning Meeting Summary] Raw material prices pull back significantly, supply-demand looseness intensifies, and the industry chain is under pressure.",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNMzFXcF9pdVBXbDFSMmFOV1F6NVNVaG9GbFZySGRqQjVoZk1YMHh2RDBvc2t0Q1MyRlNkNzNOai1zakMwc0pWaUw4TkZiZmJKUzhjRDgtZkp4OTg5Sl9nYWphT0t5YkR2RHo0Q0M0bEpiOHp3ZGpTQ1BBWUxJbi1UY3JaMEpUUGxBWnN3Ul9GNVZrcVlZVGtiQ01kY3ZoLTFWaWRya3VTYTdaaFBDWkFhaW1yQjNwSDhqTjFPOWRsTVlFV1hWaEVWcko0T2J3RDFSaVlWcXlSME5NQVNvMm1pVFI3WnhYcnVBTFJ3MWVzeUszVXZzYXJZSE5DVzhITGx5dGpXTGFJWkgtUVBSTElkd1ZqTnlXUlVxdjhMSlhBUzNleGlxX1NEeGlFYnFqSVlCRkE?oc=5",
-   "score": -1,
-   "why": "pressure"
-  },
-  {
-   "date": "2026-10-30",
-   "title": "Indonesian Nickel and Cobalt Prices Decline on October 30",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR05nTEtLZVcxQjR3TjBjWjZ1VWxuX2lDTDh1WVlEbENfQjVCd3ZZVFpFcnFKV3A1X25lWDdNYkFJTDF5THpjYU5KcGVtWEh0SHEwR2dGYjRCZlVIelpid2dUN1BSaUlXbkk4RFN0WlNiV1o4aGdoWE5CMzJCNE13NjBTRFd2WVhGZ1p5cHdPYUZiemVfNXJMRnozd3p5d0tPVTJnRA?oc=5",
-   "score": -1,
-   "why": "decline"
-  },
-  {
-   "date": "2026-10-30",
-   "title": "Bold Cobalt Blue women\u2019s Rectangular Sunglasses alphavilleearredores.com.br",
-   "source": "alphavilleearredores.com.br",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMU5lVi02WjgtS1JQWFFEU1BBWEE2TmhreWVlNTBLZk5MaUhKRnpXRHE1eTZVRkZrTzdfZDI0UVNoNlJLbnVoMHNsSXZSd3dOY1VjS1hRaHlsU2ZtajBsYTd3Y1dGYmVVSVhJMnp6UkpTcWM1bkMzNGRYajFTRHRBbk0tTTVCazI1QmllWjg3M2xfSV9HNkVzUTcwWGZnWDhLcWJ1Z1RLTHFpazlqNW5hcVBCdTdfMEk0cEVaSHhsTmRyVlRDR0M1NVl5aVhRdzNzT01NU3YxSjE?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
  "nickel": [
+  {
+   "date": "2026-11-13",
+   "title": "Nickel Asia Posts 19% Profit Growth to P6.16B Despite P1.99B Impairment in 2026",
+   "source": "Daily Tribune",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOLUF1eXhpM2VkTk1DQkJnRm1WSWVNWTZrVGJlbkxzNHhtQkZ2TWJfUFYwV3R6eFAwSVlYVVFLUnphX3o2Z3liUENwZnVxX29yMVBqQ2VSV3NzT1Y0WnVUQTRveEtNU3NCNndkeVR3OWRDamJmb3V0MTFsVU9mVUgzSHNrajhJWXIwQkxiWVBsTGdhSlE?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
+   "date": "2026-11-13",
+   "title": "Indonesia's Rp180 Trillion Nickel Investment Puts Modular Camps in Focus",
+   "source": "EIN Presswire",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT0FDb3QxZFVSTjVYWHpHb3VkX2ZyYU5VVlRRdU1JbVdLVHA0VHJHYmxYRDBXVmc2azRBdThUZVhjWGxpRzhvY0QyTktLci1QR212OU1aUnBqRUlULTZHYTVCZ3JENmpiSG15Rm1fMGVmWGpJWlAwYkwxZXhOa3h5TDhIaUotclNxdkF2WDVNRUdoc2dTM25JQmFkdk50VFItSjF5dHV2dWxQS0pMQkNtaFRscUJsY0hkYzFr?oc=5",
+   "score": 0,
+   "why": ""
+  },
   {
    "date": "2026-11-12",
    "title": "[SMM Analysis] Nickel prices drive absorption of low-priced cargoes; nickel salt prices recover this week",
@@ -779,6 +795,14 @@
    "why": ""
   },
   {
+   "date": "2026-11-09",
+   "title": "Homeland Nickel Inc. (SHL.V) Stock Price, News, Quote & History",
+   "source": "Yahoo! Finance Canada",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9MX0tNQmVlZFQ2MFg2dFQ0UjlwTUFQLUVtd3N4RnY0ZDZDa3UxZnFqTlk0aEkzSlJLQ3hnVVRLeFlSX1d2SVNIbk9PV1Z4OTd5VEJZ?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-06",
    "title": "Crude oil rebounds, metals show mixed performance, LME and SHFE nickel continue to lead the gains, LME copper, LME tin, SHFE copper, and SHFE tin lead the declines [Overnight Market].",
    "source": "Shanghai Metals Market",
@@ -937,32 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeVZpeG1Jbk4tYjhVQWU1NEthYmoyU281RklYdmduYkxoZmFzU010cFB1TkRVM0ZTb3pwQ0llRDhFMTUyd0g3WHF6YXJqM2dZS00zelFWQ1JOUUZoNXFqLUhhUHJVc3AyOG83YWdjamx3aHJ2MDBqR1FOVmVTVW1Kek9ybDVvZUhFSFN0R2dGMzQ2UC1FSHoyRFo2bHdGS1VvaTI3d2NhcWthOHRsSXJOQS1nNUJTQ2s?oc=5",
    "score": -1,
    "why": "surplus"
-  },
-  {
-   "date": "2026-11-05",
-   "title": "[SMM Nickel Sulphate Daily Review] Nickel Prices Surge on November 5, Nickel Sulphate Prices Rise Slightly",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORXdOZTkzY1luRnRCMzE2REZWQzA0UGsxWThtZGV3Zm1NTnpyeDdaSUE3S01qX3dJVzQ4UVZIcXBSNElHM3luRXhYcFp1ZDg0d1F2QVQ5dktDa1UtWFUzUXpCVmJxWWZBQWpGSmRwLWV0T1RIeVpzQ3RaQms1czFkLVF2RWRUWEItUlBJZ25LNjdPQXhsbElFMUsxUzRhQk9YV2VOeUdlaG1Cand3VGpqTEtSbUNEN3ZsTkNFUG42a1otcXIzU3plRjNFRW1nZ1VpY2RRbFV6NGl6bjlCY05BdkZB?oc=5",
-   "score": 1,
-   "why": "surge, rise"
-  },
-  {
-   "date": "2026-11-05",
-   "title": "Indonesia targets ex-Glencore trader Kurniawan\u2019s nickel empire",
-   "source": "The Edge Malaysia",
-   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfa1FPSHVOaGY1ZTIxb1Rsd200UUxFNExyY0tVcmlQVl9Ca0tjS05kdm1DRXZSSVRjVDFpb2EyeWFBc0NhSEZJTWJUblpQZDhl?oc=5",
-   "score": 0,
-   "why": ""
-  },
-  {
-   "date": "2026-11-05",
-   "title": "[SMM Analysis] Spot market transactions sluggish; nickel salt prices decline this week",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUVY1bVVlTk1mcjd5eGdrQndRelJzaUx4bGNrQlhaRTcwRllXMFluV2NSanBVdjFFMllsTXQzX1V1ZHk5WGtxSVRGdVZualBBcnFNZGFzbGlKeDZJN3hqdS1MUjg2TFJvY2pOZDhQR2ZlSFlZam1KU0RnNFZfZ3lKYlBZU29HNFdLUk5rczZkQzFxZ0VuNVNqOFFXNGp1UW9HZ2sybGd5RnBta2hQa0hzV0RGemhMMmFpX3A4ejY4R25jNlpVTzNR?oc=5",
-   "score": -1,
-   "why": "decline"
   }
  ],
- "updated": "13 Nov 2026 00:27 IST",
+ "updated": "13 Nov 2026 15:00 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
