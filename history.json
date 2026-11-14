@@ -22,7 +22,8 @@
   "2026-11-09": 33525.0,
   "2026-11-10": 33525.0,
   "2026-11-11": 33525.0,
-  "2026-11-12": 33525.0
+  "2026-11-12": 33525.0,
+  "2026-11-14": 33525.0
  },
  "nickel_lme": {
   "2025-01-02": 15010.0,
@@ -500,7 +501,7 @@
   "2026-11-12": 16010.0,
   "2026-11-13": 16025.0
  },
- "updated": "14 Nov 2026 14:27 IST",
+ "updated": "14 Nov 2026 15:12 IST",
  "note": "USD/tonne by date, recorded by this job. cobalt_lme_fm = LME Cobalt Fastmarkets MB month 2 (from 17 Oct 2026); cobalt_cme = CME Cobalt Metal (Fastmarkets) futures 2nd month settlement; cobalt_lme = LME physical (dailymetalprice.com); nickel_lme = LME nickel cash (westmetall.com).",
  "cobalt_lme_fm": {
   "2026-10-17": 48215.1,
@@ -696,8 +697,8 @@
   "2026-10-08"
  ],
  "log": {
-  "dmp_sample": "(VND) West African CFA Francs (XOF) Yemeni Rials (YER) Zambian Kwachas (ZMW) Cobalt Price (USD / Metric Ton) Price Date $33,525.00 Nov 12, 2026 $33,525.00 Nov 11, 2026 $33,525.00 Nov 10, 2026 $33,525.00 Nov 9, 2026 $33,525.00 Nov 6, 2026 Link directly to this result here: http://www.dailymetalprice.com/metalprices.php?c=co&amp;u=t&amp;d=5&amp;x=USD Metal Futures versus Options A futures contract is an obligation to b",
-  "dmp_rows": 5,
+  "dmp_sample": "",
+  "dmp_rows": 0,
   "nickel_rows": 221,
   "cme_backfill_added": 0
  }
