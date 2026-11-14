@@ -121,6 +121,22 @@
    "why": ""
   },
   {
+   "date": "2026-11-10",
+   "title": "Keynote: The Evolving Cobalt & Nickel Supply Chain - Navigating Surplus, Quotas & New Chemistries",
+   "source": "Benchmark Mineral Intelligence",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTF9ZMVlqSXNmQWhiSENmeXFzVnVxOVQ0NmR6N2dWbHZCSEZUQ0ZkQjV1SzgyOVZ0R2JvUEdCMEYyMFJBWGFTWWExVE5XbS1Ccko2Q0pmcWR5UDFLaXpQYzFkMWZDWUV3bDJCeTdBVzVkSDVNZlNyWk5LMzRWRVB3am1pbnR0ekwxOXZhWGR1VzNxT19GcU1WLXpMX010Yjd0YjFadHlESndHeENPMmtjbkVhbzF3UkEyVXQ4SW9obkVhLWVUTVBhMTg4bjE1VVh5VnY5OA?oc=5",
+   "score": 0,
+   "why": "quota, surplus"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Cornerstone Group buys Cobalt Marketplace for $4.9M",
+   "source": "The Business Journals",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMk9sUVlKTmJpQmhvYm02Rnd2ZTZtRi05UExMMkJvVEZRUjBOU21hYUNYY3JhV0RfNTZEZnJkbmF2R1plR3A5YnB0MzN3cVFlSEFRdHp6d01mM0FwNE9XYVhNNjhDenBuTHFfbG5xZXVHWWE4M0hMOHNJc0NWQlNsMnpuUEp4SjBDZ0xKQV8yNGJwOTc0?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
    "date": "2026-11-09",
    "title": "Congo pushes US to implement mining investment, localize copper-cobalt processing [SMM Copper Morning Meeting Summary]",
    "source": "Shanghai Metals Market",
@@ -463,22 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSUc4alRGbGF2alFQVUIxM0tzbmNucG9aaU40WjM1RGpBcTZqZWRwOHd4WWpjMlV3M29EN19Nc3h6empyNjFucjlXTU1uWVg0ekhnd0hmbWg0a3lnNmlqbTMxNUJacmFRblhjdGJ6ZnVRbnhSUW1rX1J3VVMzeGZrOE1XdXoyYlUyZmxuX2VCbXJEUGJyYWhrSFVyM0JudmRaZTBfbnh0N3FQMWE5T3ZxNDY2bktEQmhTMEpQY3lmeTk?oc=5",
    "score": 0,
    "why": ""
-  },
-  {
-   "date": "2026-11-02",
-   "title": "Weekly Recap: Own\u2011sourced copper growth and cobalt drop from DRC quotas",
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMWlweDhQb2Vpd2ZTTVlNby1MckJCb1lyVGRzLWtHc3Q2MHJ0TFYwTmdXSFNxbWItbTdIZk1DQ1NhVGlmNGwySkdsa2tlZ0FNem8wM20zRFZscmtWcGVGdFUtSVhnXzhNLW92alFOclQyMGhteFhxbVFXN2JBbWxuRmVMeTVTaWh2RHc4SkEwbTM4ZHdHNm4zaWZFS3VicDg4ZW8zM29Fc19uMWliQ25uOUF4OGxyNHBuUC1vZzhDdDh3Wlkwb2tMYVV0ZGE?oc=5",
-   "score": 0,
-   "why": "quota, drop"
-  },
-  {
-   "date": "2026-11-02",
-   "title": "Surging Supply Met a \u2018Lackluster Peak Season\u2019: Cobalt Prices Saw Their Largest Monthly Drop of the Year in October",
-   "source": "Sunsirs",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uUkxxNHJsWDBUa3I4RjZuWVlCejM0T21pMVpqWkdOQmhqRFBxSlJGVDV5MDljdlViR2JJcWQ2NzgzbXNfZGkwUHFBSzhZcHpUZ3FxbGlVdUlRelJUUGc?oc=5",
-   "score": -1,
-   "why": "drop"
   }
  ],
  "nickel": [
@@ -495,6 +495,22 @@
    "title": "Nickel Market Forecast 2031: Volume to Reach 4.39 million tons as Stainless Steel and Battery Demand Support Growth, Reports Mordor Intelligence",
    "source": "StreetInsider",
    "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxONUU4aXJFYXRYVmdJV3dhMUkyc2RJV1lPb3Nydklhbk5wcjJqZ01lQjhpQ2YyYUpyME1OQTgyV0dZX1JUNnJhY0RZRDBGNDIxZGNIeEkySEZLSllKdjhReEM4TDdwN1lnaHAtREtXejduQVVFWlU5eGFxbEZvZjVPS2lscG5Fb0t3eDFyRzZOMzROQ1ZJbjg5emdIejlFZU5ua3hZRzZraFhHSGZ3WUlzWTU4ci1iY1pfWGlDc0FZUUhHaEpiNGJkRUhUOVpwMXV2ajNaemtYUlJtdkExNzM5QVZ5YkdiUW9CYkx6TnhTTjg4Mi1lNmptb2tmT2N4WE5jd1p3emFMbEJOMFhiNS1XVTRiZURJLTNiM0EwUUpjaC1PZG13dzcw?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
+   "date": "2026-11-14",
+   "title": "Electroless Nickel Chemicals Market To 2035: Aerospace and Electronics Drive Growth - News and Statistics",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNEhWblBfMm85OEZGYlRUWTNLbzRZbllZbTNsdmxKSThZV283RXFINC10U2w0SmV4Zy1lYkVnZGdDWlZuaDN1QW0yajlxRzBhVHcySWNxVGlUMy1JNGtyS2EzWmE4U3lhTGxJbXFfUTNCWEQ5S2JRWWwxVkV6MUk3UlhKTjFHS3NtZ0N1Z3ktV19ocVdYLWZaNmpiWnRiTUVoOUxBNmJBa1AxcS1jY19NZFcySEpNNXBDcTlhV3hiWU9BTlE?oc=5",
+   "score": 0,
+   "why": ""
+  },
+  {
+   "date": "2026-11-14",
+   "title": "Nickel Market Forecast 2031: Volume to Reach 4.39 million tons as",
+   "source": "openPR.com",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNFRQSHhrYVc1UVhPY1hzSkNwQnVHVm5nUTdNb01CUXRZNzBpN1p4OXpXY0RTaVZENWM2TFh6R19FOXlVMUpVYlUydVlGcHEyQzJnTGlyMXZudjR4WHlxNVVHdnlveVdSbzNQSWR0TENjRXoxamx2eHJEc2xHX01ERy1iS1kyOUREM2xhY2pMVEdMeXluV2R1MkQ1aUtkMjlnVnc?oc=5",
    "score": 0,
    "why": ""
   },
@@ -945,24 +961,8 @@
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRVpkTkdYVEJzTGlfRGYyVEkwNkluT3ZFTHp5Z0YyRzlDRTlSV0ZZbEk5R0FMcC15WGx1Z2lzWTNrbFFuYXFqeExXY09jMEg1UGJzcXRGaGs0R1pMVVhhQlBqdGVVeE9IeE9LOHlmVmhkaDFqeWJJeDBwVFA0QUFRaTE4ZFBGTVNCbnJuR2QwaW9feWdjYUp1SmpwQkxjTFU?oc=5",
    "score": 1,
    "why": "jump"
-  },
-  {
-   "date": "2026-11-06",
-   "title": "Nickel Futures Rally Lifts NPI Prices, Spot Market Diverges Sharply",
-   "source": "Shanghai Metals Market",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQY05vYnIzTDFnUUU0N3BKSjkxSWs3My16czh0Sk5BR01odlE2NjE2Q3hHVDVEaDVYS29UWmpmdEI5UjR4bWpKTk81SXlIMXlETVMxanJmbW41dWtJeHg3cUwyWmtob1BJMGN2b0FaVFJNZUE5T3p0V1B3aXI5dkM3WEItOVZ5SXdkYVpfUG93VE9hWHZHWGp0NFA0b3UxS2hKVXY4NkpSNHZ0Sy1lNmdMeA?oc=5",
-   "score": 1,
-   "why": "rally"
-  },
-  {
-   "date": "2026-11-06",
-   "title": "Nickel Market Watch: Indonesia Supply Policy Creates a Fresh Test for LME Prices",
-   "source": "kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdGJRNFI3UVVwTEptY2FnVG9xLWZENzZwajRmMC1NNFhsR1kwR3BvWnBzQV9XRHg0aDRoQjZhZHFVc3d2VjE3bjJnajdIZ01qSmZjenVXZFFPcTd5aXhjdHpaSlRzVnB6RzRrdmdmaGw1Q2ZGLXJiRXYtR0k5UjVhLXhlZnZpTWRncEgtMVlRS19WREJkSDVNdGM1RTdqalBfbVJDcHpPNjAyc0pFNGx3ZWhoRWZheGM?oc=5",
-   "score": 0,
-   "why": ""
   }
  ],
- "updated": "14 Nov 2026 15:12 IST",
+ "updated": "14 Nov 2026 21:47 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
