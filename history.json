@@ -516,7 +516,7 @@
   "2026-11-20": 15310.0,
   "2026-11-23": 15215.0
  },
- "updated": "25 Nov 2026 02:45 IST",
+ "updated": "25 Nov 2026 04:41 IST",
  "note": "USD/tonne by date, recorded by this job. cobalt_lme_fm = LME Cobalt Fastmarkets MB month 2 (from 17 Oct 2026); cobalt_cme = CME Cobalt Metal (Fastmarkets) futures 2nd month settlement; cobalt_lme = LME physical (dailymetalprice.com); nickel_lme = LME nickel cash (westmetall.com).",
  "cobalt_lme_fm": {
   "2026-10-17": 48215.1,
@@ -552,7 +552,7 @@
   "2026-11-21": 39727.3,
   "2026-11-23": 40080.04,
   "2026-11-24": 40565.06,
-  "2026-11-25": 40080.04
+  "2026-11-25": 40565.06
  },
  "cobalt_cme": {
   "2026-10-09": 48391.41,
