@@ -441,6 +441,14 @@
    "why": "export ban, slump"
   },
   {
+   "date": "2026-11-24",
+   "title": "World\u2019s top cobalt producer, DRC, pulls the plug on exports again, rattling Chinese suppliers as rival Indonesia prepares to cash in on global shortages",
+   "source": "Club of Mozambique",
+   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOYXE3VlF6SVVOc2h4Q1FHLUNNZ0dwSjM5Q1hydTZfNUJOT3BzUFNnWURXRk9aTzI0czV6Y3ktMENacWl6YkNnb0NkREstMVR0VFRZT1FHc3UxWjRreWItNG1Hbnk1MExpOXF3UWdkelhVelpYcEdZaEtMaUl3SHczdE5yZFZZSko0Wk16SmZrTVRxeFlOdC12Tm9IOVdGZTBEcGNDV1NlcVdEeFJibXlxd3hKQWJHSnVxWUthWHNydmh1Y2hRWE1vQnRsS1Z1eWtXdkJHVVdKdWMyTXpKRU9lTmE1VlJ0eHQ3Q21iU2JVOTZqMmJjZkRkVVk2NFRicmNlSmo3aWtCd1NJc2pSRjRWYg?oc=5",
+   "score": 1,
+   "why": "shortage"
+  },
+  {
    "date": "2026-11-23",
    "title": "DR Congo reimposes cobalt export ban to shore up prices",
    "source": "Financial Times",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeEVBUlhRN0dObFlmS0djZVNiRzJzT0JabmZDcFJxY2lSMnVabkY4bmpNWFJJR0taUVBPS3ZHb2NCaG1HNHIzQlhDVndhaWt0UU1yTHBsWEJqT2l3NS1FWjlXaWh2dkRsUmJRQlUwX2xHRnBRTFlVSlVpWlpkdUxfRHB5MXRvT21tSHpIOVpvNml2b3k2MWc?oc=5",
    "score": 1,
    "why": "export ban"
-  },
-  {
-   "date": "2026-11-23",
-   "title": "Congo halts cobalt exports again to tackle oversupply, support prices, industry regulator says",
-   "source": "Mining.com",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaWFPUVFjLUVvbE5qdTNjSVZ1SUpoV3hNcXhuZ3FFaUd4Q0xBSVQ4TFg0ZEVFQnBXN3NNcFlBYzBvZGVGUnRWaEhMcGVBOUEzVWlGRG1pNjgtWUVjVUdfMVN6emZKRklsZjg2WE5NNEk2RW9acGt3YXdwSzhxQWJkZzY3YVNkU1RfS1BhWFREZ3hRVllEcS1RVWMyRDRyT0xubWRxOGFIMmNTa2lOX0p5VzREdTFmWTByblBjdw?oc=5",
-   "score": 0,
-   "why": "halt, oversupply"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "26 Nov 2026 16:23 IST",
+ "updated": "26 Nov 2026 17:16 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
