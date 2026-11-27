@@ -241,6 +241,14 @@
    "why": ""
   },
   {
+   "date": "2026-11-25",
+   "title": "DR Congo revives cobalt export ban from 30 November as prices slide",
+   "source": "DNE Africa",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05RmRGRTQ0dEU5MTNFcHRybF9hVzdBelZVamtRZ3dtTldpN0c2S3dLdnJtLWZUaUJNZzFzZWY4QXpqNkZ1RlMwNTNYV0dwOEZmU3RyLUx6ZWoyc05FeGMzNl9SLXBjdU0?oc=5",
+   "score": 0,
+   "why": "export ban, slide"
+  },
+  {
    "date": "2026-11-24",
    "title": "[SMM Nickel Intermediate Product Daily Review] November 24: MHP and high-grade nickel matte nickel prices fell, cobalt prices rose",
    "source": "Shanghai Metals Market",
@@ -471,14 +479,6 @@
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdWlZTkYwRDdTRzNnTnVBWVRneFdDZm95MWNtajJMTGR6ZkY0OF9sNXFWUmI3a3JtQzlhbEJvdlcySkNCYkZpWk9oMElfZEFjZ0VDOV9qaU9NVG95RHlfNW1ma3Mya29EZUlURkVpTk05eDRZRHFBVGRXa3JHSURGZ0hrZ2x3N3cwZlBqQ2pUUmswejhGVnY3UWVB0gGfAUFVX3lxTE5IcW1vTzRJVHNQVmx0b21SdlY4bkNNNkdtaWo4RS15aTlZLTlMNGlkZ283ZmZJdGFiY2VScXlVNS1YMEE3cnpiRFJibERpdGR5ZGlzdDBxMVdHZFZHdUI5WFBFTjRfbWRrdTVvOHVaeWtfbmFYZU1RUXJlck9WNXRxSXcyanMydWhBYWxYclc4VXdrbFF4UHItcGZOVW9vSQ?oc=5",
    "score": 0,
    "why": "halt, drop"
-  },
-  {
-   "date": "2026-11-24",
-   "title": "China\u2019s cobalt firms race to beat DR Congo\u2019s export ban on battery material",
-   "source": "South China Morning Post",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMFJGQklnNml5XzQwWE9JR2UyZzkxbXVrUWp4UXJKT0xMX2RwUEJrazllMlJWejY4MW56NkNFNE9fRkpMNEtrVVFNQ01kN05kTTNtTWZlTTBuWTZ5djBzNVhlWVBlQW9kT003aDZoOTZzcUkwcUFNdmJyN1Q5U0ZYNkh1NG9rRGxES1RSNlRSOFQwbl9zOTZ5ZGNhSjY1RnR0bHZXNzdMU3d6VjB2UjQwR3FqcUFfYjNvNkMzUS13SndYWHFwYk5hYk1tcy3SAcwBQVVfeXFMUDBSRkJJZzZpeV80MFhPSUdlMmc5MW11a1FqeFFySk9MTF9kcFBCa2s5ZTJSVno2ODFuejZDRTRPX0ZKTDRLa1VRTUNNZDdOZE0zbU1mZU0wblk2eXYwczVYZVlQZUFvZE9NN2g2aDk2c3FJMHFBTXZicjdUOVNGWDZIdTRva0RsREtUUjZUUjhUMG5fczk2eWRjYUo2NUZ0dGx2Vzc3TFN3elYwdlI0MEdxanFBX2IzbzZDM1Etd0p3WFhxcGJOYWJNbXMt?oc=5",
-   "score": 1,
-   "why": "export ban, firm"
   }
  ],
  "nickel": [
@@ -963,6 +963,6 @@
    "why": ""
   }
  ],
- "updated": "28 Nov 2026 01:29 IST",
+ "updated": "28 Nov 2026 02:02 IST",
  "note": "Headlines from Google News / Bing News RSS. score +1 = news that usually pushes the price up, -1 = down, 0 = neutral, by keyword."
 }
